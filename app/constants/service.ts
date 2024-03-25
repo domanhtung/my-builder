@@ -24,3 +24,8 @@ export const servicesContent = [
     value: 8,
   },
 ];
+
+export const projectContents = [
+  "/images/project_4.jpg",
+  "/images/project_5.jpg",
+];
