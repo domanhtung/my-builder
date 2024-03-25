@@ -5,6 +5,8 @@ export const pathnameObj = {
   visualization: "visualization",
   project: "project",
   contact: "contact",
+  aboutUs: "about-us",
+  service: "service"
 };
 
 export const navname = [
@@ -14,24 +16,24 @@ export const navname = [
     name: "Home",
   },
   {
-    key: pathnameObj.Drafting2D,
-    url: `/${pathnameObj.Drafting2D}`,
-    name: "2D Drafting",
+    key: pathnameObj.aboutUs,
+    url: `/${pathnameObj.aboutUs}`,
+    name: "About Us",
   },
   {
-    key: pathnameObj.modeling3D,
-    url: `/${pathnameObj.modeling3D}`,
-    name: "3D Modeling",
+    key: pathnameObj.service,
+    url: `/${pathnameObj.service}`,
+    name: "Services",
+  },
+  {
+    key: pathnameObj.project,
+    url: `/${pathnameObj.project}`,
+    name: "Projects",
   },
   {
     key: pathnameObj.visualization,
     url: `/${pathnameObj.visualization}`,
     name: "Visualization",
-  },
-  {
-    key: pathnameObj.project,
-    url: `/${pathnameObj.project}`,
-    name: "Project",
   },
   {
     key: pathnameObj.contact,
@@ -141,5 +143,72 @@ export const testimonials = [
     job: "Fashion Designer",
     comment:
       "Meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself",
+  },
+];
+
+export const socials = [
+  {
+    img: "/images/facebook.svg",
+    url: "",
+    name: "facebook",
+  },
+  {
+    img: "/images/twitter.svg",
+    url: "",
+    name: "twitter",
+  },
+  {
+    img: "/images/instagram.svg",
+    url: "",
+    name: "instagram",
+  },
+  {
+    img: "/images/linkedin.svg",
+    url: "",
+    name: "linkedin",
+  },
+];
+export const footerOurServices = [
+  {
+    name: "Power & Energy Sectors",
+    url: "",
+  },
+  {
+    name: "Architectures & Design",
+    url: "",
+  },
+  {
+    name: "Explore Tiling & Painiting",
+    url: "",
+  },
+  {
+    name: "Petroleum Productions",
+    url: "",
+  },
+  {
+    name: "Chemical Engineering",
+    url: "",
+  },
+];
+export const footerNavigalion = [
+  {
+    name: "Home",
+    url: "",
+  },
+  {
+    name: "About Us",
+    url: "",
+  },
+  {
+    name: "Service",
+    url: "",
+  },
+  {
+    name: "Blog",
+    url: "",
+  },
+  {
+    name: "Contact Us",
+    url: "",
   },
 ];

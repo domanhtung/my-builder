@@ -8,12 +8,53 @@ import { useEffect, useRef, useState } from "react";
 const HeaderComponent = () => {
   const filterRef = useRef<any>();
   const filterItemRef = useRef<any>();
+  const stickyRef = useRef<any>();
   const [isShowSearch, setIsShowSearch] = useState<boolean>(false);
 
   useEffect(() => {
     if (typeof document !== "undefined") {
       document.addEventListener("click", handleClick);
       return () => document.removeEventListener("click", handleClick);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+      };
+      const onScroll = () => {
+        if ((window as any)?.pageYOffset > stickyRef?.current?.offsetTop) {
+          if (!stickyRef.current.className.includes("animation-head")) {
+            stickyRef.current.className =
+              stickyRef.current.className + " animation-head";
+          }
+        } else {
+          if (stickyRef.current.className.includes("animation-head")) {
+            stickyRef.current.className =
+              stickyRef.current.className.replaceAll(" animation-head", "");
+          }
+        }
+        // if ((window as any)?.pageYOffset > 400) {
+        //   if (scrollTopRef.current.className.includes("hide-scroll-top")) {
+        //     scrollTopRef.current.className =
+        //       scrollTopRef.current.className.replace(
+        //         "hide-scroll-top",
+        //         "show-scroll-top"
+        //       );
+        //   }
+        // } else {
+        //   if (scrollTopRef.current.className.includes("show-scroll-top")) {
+        //     scrollTopRef.current.className =
+        //       scrollTopRef.current.className.replace(
+        //         "show-scroll-top",
+        //         "hide-scroll-top"
+        //       );
+        //   }
+        // }
+      };
+      window.addEventListener("scroll", onScroll, { passive: true });
+      return () => window.removeEventListener("scroll", onScroll);
     }
   }, []);
 
@@ -31,7 +72,7 @@ const HeaderComponent = () => {
   };
 
   return (
-    <header className="fixed w-full top-0 left-0 z-20">
+    <header ref={stickyRef} className="fixed w-full top-0 left-0 z-20">
       <div className="container flex mx-auto px-5 justify-between items-center">
         <Link href={"/"} className="py-3">
           <Image
@@ -50,7 +91,7 @@ const HeaderComponent = () => {
                 key={nav?.key}
               >
                 <Link
-                  href={`/${nav?.key}`}
+                  href={`${nav?.url}`}
                   className="px-3 text-[18px] font-semibold"
                 >
                   {nav?.name}

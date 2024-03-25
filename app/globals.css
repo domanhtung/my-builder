@@ -344,3 +344,97 @@ body {
   fill: #ff5e14;
   color: #ff5e14;
 }
+.input {
+  background: rgb(var(--background-start-rgb));
+}
+.wpo-site-footer {
+  background: url(/images/footer_bg.jpg) center / cover no-repeat;
+  position: relative;
+  font-size: 15px;
+  overflow: hidden;
+  z-index: 1;
+}
+.wpo-site-footer::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #000b47;
+  opacity: 0.9;
+}
+.animation-head {
+  top: 0;
+  background: #000b47;
+  animation: animationHead 0.5s linear;
+}
+@keyframes animationHead {
+  from {
+    top: -86px;
+  }
+  to {
+    top: 0;
+  }
+}
+.wpo-breadcumb-area {
+  background: url(/images/service_title.jpg) no-repeat center top / cover;
+  min-height: 480px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+}
+.wpo-breadcumb-area:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(48, 65, 104, 0.8);
+  content: "";
+  z-index: -1;
+}
+.blog-sidebar:before {
+  content: "";
+  background-color: #ff5e14;
+  width: 55px;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 10px;
+}
+.blog-sidebar:after {
+  content: "";
+  background-color: #f2f2f2;
+  width: 80%;
+  height: 4px;
+  position: absolute;
+  left: 65px;
+  bottom: 0;
+  border-radius: 10px;
+}
+.wpo-newsletter-widget input {
+  border: 0;
+  display: block;
+  width: 100%;
+  height: 55px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 10px rgba(16, 45, 72, 0.15);
+  padding: 15px;
+  text-align: center;
+  color: #000b47;
+  opacity: 0.6;
+}
+.wpo-newsletter-widget button {
+  background: #ff5e14;
+  width: 100%;
+  height: 55px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  margin: 20px 0;
+}
