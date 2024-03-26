@@ -10,7 +10,7 @@ const Testimonial = () => {
       <div className="text-[22px] font-semibold text-[#233FD6]">
         testimonial
       </div>
-      <div className="text-[50px] font-bold">What Our Clients Say's</div>
+      <div className="text-[50px] font-bold">{"What Our Clients Say's"}</div>
       <div className="pt-5">
         <Swiper
           slidesPerView={3}
