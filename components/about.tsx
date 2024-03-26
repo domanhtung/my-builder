@@ -35,7 +35,7 @@ const AboutUs = () => {
           through 2D drawings and 3D models, facilitating efficient fabrication
           and erection methods for steel structures worldwide. With extensive
           knowledge and adeptness in various tools and techniques, we deliver
-          exceptional design and drafting services tailored to each project's
+          exceptional design and drafting services tailored to each project&apos;s
           requirements.
         </p>
         <div className="grid grid-cols-2 mt-20">

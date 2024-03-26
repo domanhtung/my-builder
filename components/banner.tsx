@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 import { bannerContents } from "@/app/constants/banner";
 import clsx from "clsx";
