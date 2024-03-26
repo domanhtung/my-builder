@@ -27,7 +27,7 @@ const FooterComponent = () => {
                 return (
                   <div
                     key={social?.name}
-                    className="p-[10px] bg-[#000B47] hover:bg-[#FF5E14] cursor-pointer duration-150"
+                    className="p-[10px] bg-[#000B47] hover:bg-[#ED4D5D] cursor-pointer duration-150"
                   >
                     <Image
                       src={social?.img}
@@ -45,12 +45,12 @@ const FooterComponent = () => {
             <div className="pb-2 text-[30px] font-semibold text-light">
               Our Services
             </div>
-            <div className="w-[80px] max-w-full h-[2px] mb-8 bg-[#FF5E14]" />
+            <div className="w-[80px] max-w-full h-[2px] mb-8 bg-[#ED4D5D]" />
             {footerOurServices?.map((service, index) => {
               return (
                 <div
                   key={index}
-                  className="text-light mt-3 text-[18px] hover:text-[#FF5E14] cursor-pointer"
+                  className="text-light mt-3 text-[18px] hover:text-[#ED4D5D] cursor-pointer"
                 >
                   {service?.name}
                 </div>
@@ -61,12 +61,12 @@ const FooterComponent = () => {
             <div className="pb-2 text-[30px] font-semibold text-light">
               Navigalion
             </div>
-            <div className="w-[80px] max-w-full h-[2px] mb-8 bg-[#FF5E14]" />
+            <div className="w-[80px] max-w-full h-[2px] mb-8 bg-[#ED4D5D]" />
             {footerNavigalion?.map((service, index) => {
               return (
                 <div
                   key={index}
-                  className="text-light mt-3 text-[18px] hover:text-[#FF5E14] cursor-pointer"
+                  className="text-light mt-3 text-[18px] hover:text-[#ED4D5D] cursor-pointer"
                 >
                   {service?.name}
                 </div>
@@ -77,14 +77,14 @@ const FooterComponent = () => {
             <div className="pb-2 text-[30px] font-semibold text-light">
               Newsletter
             </div>
-            <div className="w-[80px] max-w-full h-[2px] mb-8 bg-[#FF5E14]" />
+            <div className="w-[80px] max-w-full h-[2px] mb-8 bg-[#ED4D5D]" />
             <div className="text-light">Get latest updates and offers</div>
-            <div className="flex mt-5 items-center border border-[#FF5E14]">
+            <div className="flex mt-5 items-center border border-[#ED4D5D]">
               <input
                 className="text-light w-full h-[45px] px-5 bg-transparent outline-none"
                 placeholder="Your email"
               />
-              <button className="flex w-[45px] min-w-[45px] h-[45px] items-center justify-center bg-[#FF5E14]">
+              <button className="flex w-[45px] min-w-[45px] h-[45px] items-center justify-center bg-[#ED4D5D]">
                 <Image
                   src={"/images/icon_send_email.svg"}
                   width={19}

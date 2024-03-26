@@ -43,7 +43,7 @@ const HomeService = () => {
                         alt="icon"
                       />
                     </div>
-                    <div className="mt-2 text-[25px] font-bold hover:text-[#ff5e14] cursor-pointer">
+                    <div className="mt-2 text-[25px] font-bold hover:text-[#ED4D5D] cursor-pointer">
                       {content?.title}
                     </div>
                     <div className="mt-2 opacity-80">{content?.content}</div>

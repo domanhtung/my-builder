@@ -25,7 +25,7 @@ const ServeComponent = () => {
           </div>
         </div>
         <div>
-          <div className="mb-[-120px] p-3 bg-[#FF5E14]">
+          <div className="mb-[-120px] p-3 bg-[#ED4D5D]">
             <Image
               src={"/images/serve_1.png"}
               className="w-full"

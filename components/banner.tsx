@@ -90,7 +90,7 @@ const Banner = () => {
     <>
       <div className="static-hero min-h-screen">
         <div className="container mx-auto pl-[120px]">
-          <p className="text-[20px] !text-[#FF5E14] font-semibold">
+          <p className="text-[20px] !text-[#ED4D5D] font-semibold">
             Welcome to Sailo
           </p>
           <h1 className="!text-white text-[70px] font-bold">

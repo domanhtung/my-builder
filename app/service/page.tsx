@@ -96,7 +96,7 @@ export default function Service() {
                             alt="icon"
                           />
                         </div>
-                        <div className="mt-2 text-[25px] font-bold hover:text-[#ff5e14] cursor-pointer">
+                        <div className="mt-2 text-[25px] font-bold hover:text-[#ED4D5D] cursor-pointer">
                           {content?.title}
                         </div>
                         <div className="mt-2 opacity-80">
@@ -112,12 +112,12 @@ export default function Service() {
           <HomeContact />
         </div>
         <div className="px-5">
-          <div className="flex w-full p-[6px] bg-[#FF5E14] bg-opacity-15 rounded-[6px]">
+          <div className="flex w-full p-[6px] bg-[#ED4D5D] bg-opacity-15 rounded-[6px]">
             <input
               className="w-full px-3 bg-transparent outline-none"
               placeholder="Search Post..."
             />
-            <button className="flex w-[50px] min-w-[50px] h-[50px] items-center justify-center bg-[#FF5E14] rounded-[6px]">
+            <button className="flex w-[50px] min-w-[50px] h-[50px] items-center justify-center bg-[#ED4D5D] rounded-[6px]">
               <Image
                 src={"/images/icon_find.svg"}
                 width={20}
@@ -137,10 +137,10 @@ export default function Service() {
                   key={index}
                   className="flex mt-5 items-center justify-between cursor-pointer group"
                 >
-                  <div className="group-hover:text-[#FF5E14]">
+                  <div className="group-hover:text-[#ED4D5D]">
                     {value?.name}
                   </div>
-                  <div className="flex w-[28px] h-[28px] items-center justify-center bg-[#fafbfe] group-hover:text-[#FF5E14] rounded-full">
+                  <div className="flex w-[28px] h-[28px] items-center justify-center bg-[#fafbfe] group-hover:text-[#ED4D5D] rounded-full">
                     {value?.value}
                   </div>
                 </div>

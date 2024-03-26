@@ -24,14 +24,14 @@ const Projects = () => {
                   />
                 </div>
                 <div className="bg-light">
-                  <div className="project-card relative flex w-fit mx-auto mt-[-19px] text-[15px] bg-[#FF5E14] z-[1]">
+                  <div className="project-card relative flex w-fit mx-auto mt-[-19px] text-[15px] bg-[#ED4D5D] z-[1]">
                     <div className="py-2 px-4 !text-white">{project?.time}</div>
                     <div className="content relative py-2 px-4 !text-white">
                       {project?.by}
                     </div>
                   </div>
                   <div className="p-5">
-                    <div className="text-[30px] font-bold cursor-pointer hover:text-[#ff5e14]">
+                    <div className="text-[30px] font-bold cursor-pointer hover:text-[#ED4D5D]">
                       {project?.title}
                     </div>
                     <div className="mt-2">{project?.content}</div>
