@@ -2,6 +2,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { serviceContent } from "@/app/constants/home";
 import Image from "next/image";
+import { Autoplay } from "swiper/modules";
 
 const HomeService = () => {
   return (
@@ -16,8 +17,13 @@ const HomeService = () => {
         <div className="slider-service mt-5 pl-5">
           <Swiper
             slidesPerView={1}
-            spaceBetween={30}
+            spaceBetween={20}
             loop
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: false,
+            }}
+            modules={[Autoplay]}
             breakpoints={{
               640: {
                 slidesPerView: "auto",

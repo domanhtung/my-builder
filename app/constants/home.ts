@@ -6,7 +6,7 @@ export const pathnameObj = {
   project: "project",
   contact: "contact",
   aboutUs: "about-us",
-  service: "service"
+  service: "service",
 };
 
 export const navname = [
@@ -46,58 +46,58 @@ export const serviceContent = [
   {
     img: "/images/service_1.jpg",
     icon: "images/icon_service_1.svg",
-    title: "General Arrangement drawings",
+    title: "Miscellaneous Steel",
     content:
-      "We offer a wide range of services, including Anchor Bolt Plans, Embedded Plate Plans, Framing Plans, Detailed Section Plans, Embedded Plans, and much more.",
+      "Our Miscellaneous steel detailing services encompass providing precise information for various services, including rustic ornamental & miscellaneous steel and miscellaneous metalwork.",
   },
   {
     img: "/images/service_2.jpg",
     icon: "images/icon_service_2.svg",
-    title: "Marking Plan drawing",
+    title: "Stair and Handrail Detailing",
     content:
-      "The marking service offers detailed plans for steel member positioning, including assembled sections, purlins, girt elevations, and necessary Chemset or Trubolt placements.",
+      "The diverse array of services comprises metal and concrete rails, stair stringers, ramp rails, wall rails, level handrails, stainless steel staircase railing designs, and more.",
   },
   {
     img: "/images/service_3.jpg",
     icon: "images/icon_service_3.svg",
-    title: "Shop drawings",
+    title: "Pre Engineered Building",
     content:
-      "Offer blueprints essential for project execution, encompassing design, sketches, and diagrams. These drawings translate client data into visual representations.",
+      "Our pre-engineered structural design aims for functionality, aesthetics, and cost-effectiveness. Our PEB services encompass PEMB and pre-engineered steel buildings.",
   },
   {
     img: "/images/service_4.jpg",
     icon: "images/icon_service_4.svg",
-    title: "Visualization",
+    title: "Steel Fabrication Detailing",
     content:
-      "Sagittis fringilla a scelerisque sitro consetetur nunc. Urna est eget pellentesque.",
+      "Our Steel Fabrication Detailing process includes various services such as steel detailing drawings, procedures, structure fabrication, and Tekla fabrication.",
   },
   {
     img: "/images/service_1.jpg",
     icon: "images/icon_service_1.svg",
-    title: "3D Modeling",
+    title: "Joist Detailing",
     content:
-      "Sagittis fringilla a scelerisque sitro consetetur nunc. Urna est eget pellentesque.",
+      "We boast an exceptional in-house team renowned for their expertise and versatility in delivering Joist Detailing services with utmost accuracy and precision.",
   },
   {
     img: "/images/service_2.jpg",
     icon: "images/icon_service_2.svg",
-    title: "Marking Plan drawing",
+    title: "Point Cloud BIM Services",
     content:
-      "Sagittis fringilla a scelerisque sitro consetetur nunc. Urna est eget pellentesque.",
+      "Contact our expert team for point cloud to BIM services, covering Construction Documentation, Architectural 3D Modeling, Revit BIM Modeling, and Design Development.",
   },
   {
     img: "/images/service_3.jpg",
     icon: "images/icon_service_3.svg",
-    title: "Shop drawings",
+    title: "Precast Panel Detailing",
     content:
-      "Sagittis fringilla a scelerisque sitro consetetur nunc. Urna est eget pellentesque.",
+      "We're the go-to for global precast panel detailing services, covering wall panels, facades, and beyond.",
   },
   {
     img: "/images/service_4.jpg",
     icon: "images/icon_service_4.svg",
-    title: "Clash Detection on Master plan",
+    title: "Curtain Wall Detailing",
     content:
-      "Sagittis fringilla a scelerisque sitro consetetur nunc. Urna est eget pellentesque.",
+      "We're the premier provider of curtain wall detailing services. Discover our comprehensive offerings, including Facade wall detailing, and request your free quote today for the best prices.",
   },
 ];
 

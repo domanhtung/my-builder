@@ -95,7 +95,7 @@ const Banner = () => {
       <div className="static-hero min-h-[800px] lg:min-h-screen">
         <div className="container mx-auto px-5 lg:pl-[120px]">
           <p className="text-[18px] xl:text-[20px] !text-[#ED4D5D] font-semibold">
-            Welcome to Sailo
+            Welcome to Archibuild
           </p>
           <h1 className="!text-white text-[30px] md:text-[40px] lg:text-[58px] xl:text-[70px] font-bold">
             Quality Steel Detailing Services, Competitive Pricing

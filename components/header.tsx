@@ -91,10 +91,10 @@ const HeaderComponent = () => {
           </div>
           <Link href={"/"} className="py-3">
             <Image
-              src={"/images/logo.svg"}
-              className="w-[120px] h-[45px] xl:w-[155px] xl:h-[58px]"
-              width={155}
-              height={58}
+              src={"/images/logo.png"}
+              className="w-[120px] h-[29px] xl:w-[166px] xl:h-[40px]"
+              width={166}
+              height={40}
               priority
               alt="logo"
             />
