@@ -7,23 +7,34 @@ const HomeService = () => {
   return (
     <div className="mt-10 pb-[120px] overflow-hidden">
       <div className="container mx-auto">
-        <div className="px-5 text-[22px] font-semibold text-[#233FD6]">
+        <div className="px-5 text-[18px] xl:text-[22px] font-semibold text-[#233FD6]">
           What We Offer
         </div>
-        <div className="px-5 text-[50px] font-bold">Our Services</div>
+        <div className="px-5 text-[35px] xl:text-[50px] font-bold">
+          Our Services
+        </div>
         <div className="slider-service mt-5 pl-5">
           <Swiper
-            slidesPerView={"auto"}
+            slidesPerView={1}
             spaceBetween={30}
             loop
+            breakpoints={{
+              640: {
+                slidesPerView: "auto",
+              },
+            }}
             className="mySwiper"
           >
             {serviceContent?.map((content, index) => {
               return (
-                <SwiperSlide key={index} className="!w-[410px] service">
+                <SwiperSlide
+                  key={index}
+                  className="w-full sm:!w-[410px] service"
+                >
                   <div className="service-image relative">
                     <Image
                       src={content?.img}
+                      className="w-full"
                       width={410}
                       height={338}
                       priority

@@ -5,15 +5,17 @@ const Projects = () => {
   return (
     <div className="project-bg py-20">
       <div className="container mx-auto px-5">
-        <div className="text-[22px] font-semibold text-[#7C90F9]">
+        <div className="text-[18px] xl:text-[22px] font-semibold text-[#7C90F9]">
           Our Projects
         </div>
-        <div className="text-[50px] font-bold">Our special Projects</div>
-        <div className="grid grid-cols-3 gap-7 mt-10">
+        <div className="text-[35px] xl:text-[50px] font-bold">
+          Our special Projects
+        </div>
+        <div className="grid lg:grid-cols-3 gap-3 xl:gap-7 mt-5 xl:mt-10">
           {projectContents?.map((project, index) => {
             return (
-              <div key={index} className="group">
-                <div className="w-full h-[290px] overflow-hidden">
+              <div key={index} className="group flex flex-col">
+                <div className="w-full h-[200px] xl:h-[290px] overflow-hidden">
                   <Image
                     src={project?.img}
                     className="w-full h-full object-cover group-hover:scale-110 duration-300"
@@ -23,20 +25,26 @@ const Projects = () => {
                     alt="project"
                   />
                 </div>
-                <div className="bg-light">
-                  <div className="project-card relative flex w-fit mx-auto mt-[-19px] text-[15px] bg-[#ED4D5D] z-[1]">
-                    <div className="py-2 px-4 !text-white">{project?.time}</div>
-                    <div className="content relative py-2 px-4 !text-white">
+                <div className="bg-light flex-1">
+                  <div className="project-card relative flex w-fit mx-auto mt-[-19px] text-[12px] xl:text-[15px] bg-[#ED4D5D] z-[1]">
+                    <div className="py-2 px-3 xl:px-4 !text-white">
+                      {project?.time}
+                    </div>
+                    <div className="content relative py-2 px-3 xl:px-4 !text-white">
                       {project?.by}
                     </div>
                   </div>
                   <div className="p-5">
-                    <div className="text-[30px] font-bold cursor-pointer hover:text-[#ED4D5D]">
+                    <div className="text-[20px] xl:text-[30px] font-bold cursor-pointer hover:text-[#ED4D5D]">
                       {project?.title}
                     </div>
-                    <div className="mt-2">{project?.content}</div>
+                    <div className="mt-2 text-[14px] xl:text-[16px]">
+                      {project?.content}
+                    </div>
                     <div className="project-readmore flex w-fit items-center gap-2 mt-5 cursor-pointer">
-                      <span className="text-[18px] font-bold">READ MORE</span>
+                      <span className="text-[16px] xl:text-[18px] font-bold">
+                        READ MORE
+                      </span>
                       <svg
                         width="17"
                         height="17"

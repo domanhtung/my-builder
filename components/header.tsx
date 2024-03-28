@@ -10,6 +10,7 @@ const HeaderComponent = () => {
   const filterItemRef = useRef<any>();
   const stickyRef = useRef<any>();
   const [isShowSearch, setIsShowSearch] = useState<boolean>(false);
+  const [showMobileNav, setShowMobileNav] = useState<boolean>(false);
 
   useEffect(() => {
     if (typeof document !== "undefined") {
@@ -72,27 +73,103 @@ const HeaderComponent = () => {
   };
 
   return (
-    <header ref={stickyRef} className="fixed w-full top-0 left-0 z-20">
-      <div className="container flex mx-auto px-5 justify-between items-center">
-        <Link href={"/"} className="py-3">
-          <Image
-            src={"/images/logo.svg"}
-            width={155}
-            height={58}
-            priority
-            alt="logo"
-          />
-        </Link>
-        <div className="flex h-[86px] items-center">
+    <>
+      <header ref={stickyRef} className="fixed w-full top-0 left-0 z-20">
+        <div className="container flex mx-auto px-5 justify-between items-center">
+          <div
+            className="grid lg:hidden w-[40px] h-[40px] p-[6px] items-center bg-[#ED4D5D] rounded-[4px]"
+            onClick={() => setShowMobileNav(!showMobileNav)}
+          >
+            {[...Array(3)]?.map((_, index) => {
+              return (
+                <div
+                  key={index}
+                  className="w-full h-[2px] !bg-white rounded-sm"
+                />
+              );
+            })}
+          </div>
+          <Link href={"/"} className="py-3">
+            <Image
+              src={"/images/logo.svg"}
+              className="w-[120px] h-[45px] xl:w-[155px] xl:h-[58px]"
+              width={155}
+              height={58}
+              priority
+              alt="logo"
+            />
+          </Link>
+          <div className="hidden lg:flex h-[86px] items-center">
+            {navname?.map((nav) => {
+              return (
+                <div
+                  className="link-header relative flex h-full px-1 xl:px-3 items-center text-white no-underline"
+                  key={nav?.key}
+                >
+                  <Link
+                    href={`${nav?.url}`}
+                    className="px-3 text-[16px] xl:text-[18px] font-semibold"
+                  >
+                    {nav?.name}
+                  </Link>
+                </div>
+              );
+            })}
+          </div>
+          <div className="flex gap-10 items-center">
+            <div ref={filterRef} className="relative cart-search-contact">
+              <button onClick={() => setIsShowSearch(!isShowSearch)}>
+                <Image
+                  src={
+                    isShowSearch
+                      ? "/images/icon_cancel.svg"
+                      : "/images/icon_find.svg"
+                  }
+                  width={20}
+                  height={20}
+                  priority
+                  alt="filter"
+                />
+              </button>
+              <div
+                ref={filterItemRef}
+                className={clsx(
+                  "header-search-form",
+                  isShowSearch && "header-search-content-toggle"
+                )}
+              >
+                <form>
+                  <div>
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Search here..."
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+            <button className="theme-btn hidden lg:block">Get In Touch</button>
+          </div>
+        </div>
+      </header>
+      <div
+        className={clsx(
+          "block lg:hidden fixed h-screen top-0 left-0 bg-[#000b47] z-10 duration-200 overflow-hidden",
+          showMobileNav ? "w-screen" : "w-0"
+        )}
+      >
+        <div className="container grid gap-3 mx-auto pt-[100px] px-5">
           {navname?.map((nav) => {
             return (
               <div
-                className="link-header relative flex h-full px-3 items-center text-white no-underline"
+                className="relative flex h-full items-center text-white no-underline"
                 key={nav?.key}
               >
                 <Link
                   href={`${nav?.url}`}
-                  className="px-3 text-[18px] font-semibold"
+                  className="text-[16px] pt-3 font-semibold"
+                  onClick={() => setShowMobileNav(false)}
                 >
                   {nav?.name}
                 </Link>
@@ -100,43 +177,8 @@ const HeaderComponent = () => {
             );
           })}
         </div>
-        <div className="flex gap-10 items-center">
-          <div ref={filterRef} className="relative cart-search-contact">
-            <button onClick={() => setIsShowSearch(!isShowSearch)}>
-              <Image
-                src={
-                  isShowSearch
-                    ? "/images/icon_cancel.svg"
-                    : "/images/icon_find.svg"
-                }
-                width={20}
-                height={20}
-                priority
-                alt="filter"
-              />
-            </button>
-            <div
-              ref={filterItemRef}
-              className={clsx(
-                "header-search-form",
-                isShowSearch && "header-search-content-toggle"
-              )}
-            >
-              <form>
-                <div>
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Search here..."
-                  />
-                </div>
-              </form>
-            </div>
-          </div>
-          <button className="theme-btn">Get In Touch</button>
-        </div>
       </div>
-    </header>
+    </>
   );
 };
 
