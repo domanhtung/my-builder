@@ -1,18 +1,24 @@
 import Image from "next/image";
 import Link from "next/link";
-import { serviceContent } from "../constants/home";
+import { serviceContent } from "../../constants/home";
 import HomeContact from "@/components/contact";
-import { servicesContent } from "../constants/service";
+import { serveContents, servicesContent } from "../../constants/service";
 
-export default function Service() {
+export default function Service({ params }: { params: { slug: string } }) {
+  console.log(params);
+  const currentService = serveContents?.find((s) => s.key === params.slug);
+
   return (
     <div>
       <div className="wpo-breadcumb-area">
         <div className="pt-[80px] text-center">
-          <div className="text-light text-[60px] font-bold">Service Single</div>
+          <div className="text-light text-[60px] font-bold">
+            {currentService?.title}
+          </div>
           <p className="text-[20px] text-light">
-            <Link href={"/"}>Home</Link> /
-            <span className="text-[#cbd4fd]">Service Single</span>
+            <Link href={"/"}>Home</Link>/
+            <span className="text-[#cbd4fd]">Services</span>/
+            <span>{currentService?.title}</span>
           </p>
         </div>
       </div>

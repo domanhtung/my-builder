@@ -1,3 +1,5 @@
+import { serviceKey } from "./key";
+
 export const pathnameObj = {
   home: "home",
   Drafting2D: "2d-drafting",
@@ -149,45 +151,45 @@ export const testimonials = [
 export const socials = [
   {
     img: "/images/facebook.svg",
-    url: "",
+    url: "https://www.facebook.com/archibuildvn",
     name: "facebook",
   },
   {
-    img: "/images/twitter.svg",
-    url: "",
-    name: "twitter",
-  },
-  {
-    img: "/images/instagram.svg",
-    url: "",
-    name: "instagram",
+    img: "/images/facebook.svg",
+    url: "https://www.facebook.com/steeldetailingvn",
+    name: "facebook",
   },
   {
     img: "/images/linkedin.svg",
-    url: "",
+    url: "https://www.linkedin.com/company/archibuild-global",
     name: "linkedin",
   },
 ];
+
 export const footerOurServices = [
   {
-    name: "Power & Energy Sectors",
-    url: "",
+    name: "Shop drawing",
+    url: `/${pathnameObj.service}/${serviceKey.shopDrawing}`,
+  },
+  // {
+  //   name: "Architectures & Design",
+  //   url: `/${pathnameObj.service}/${serviceKey.shopDrawing}`,
+  // },
+  // {
+  //   name: "Steel detailing",
+  //   url: `/${pathnameObj.service}/${serviceKey.shopDrawing}`,
+  // },
+  {
+    name: "Marking plans",
+    url: `/${pathnameObj.service}/${serviceKey.markingPlans}`,
   },
   {
-    name: "Architectures & Design",
-    url: "",
+    name: "General Agreement Drawings",
+    url: `/${pathnameObj.service}/${serviceKey.generalDrawings}`,
   },
   {
-    name: "Explore Tiling & Painiting",
-    url: "",
-  },
-  {
-    name: "Petroleum Productions",
-    url: "",
-  },
-  {
-    name: "Chemical Engineering",
-    url: "",
+    name: "Clash Detection",
+    url: `/${pathnameObj.service}/${serviceKey.clashPlan}`,
   },
 ];
 export const footerNavigalion = [
@@ -200,11 +202,11 @@ export const footerNavigalion = [
     url: "",
   },
   {
-    name: "Service",
+    name: "Our services",
     url: "",
   },
   {
-    name: "Blog",
+    name: "Recent Projects",
     url: "",
   },
   {

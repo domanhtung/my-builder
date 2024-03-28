@@ -4,6 +4,7 @@ import {
   socials,
 } from "@/app/constants/home";
 import Image from "next/image";
+import Link from "next/link";
 
 const FooterComponent = () => {
   return (
@@ -11,32 +12,39 @@ const FooterComponent = () => {
       <div className="wpo-site-footer">
         <div className="container relative grid dm:grid-cols-2 lg:grid-cols-4 gap-10 mx-auto py-20 px-5 z-[2]">
           <div>
-            <Image
-              src={"/images/logo_2.svg"}
-              width={155}
-              height={58}
-              priority
-              alt="logo"
-            />
+            <Link href={"https://archibuild.ai"} target="_blank">
+              <Image
+                src={"/images/logo.png"}
+                className="w-[120px] h-[29px] xl:w-[166px] xl:h-[40px]"
+                width={166}
+                height={40}
+                priority
+                alt="logo"
+              />
+            </Link>
             <p className="mt-5 !text-white xl:leading-[30px] text-[14px] xl:text-[16px]">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
-              iure blanditiis labore tempora inventore laborum error molestias,
+              Archibuild provides global steel detailing services, including
+              BIM, PEB, precast panel, and rebar detailing. Our expert team
+              delivers precise 2D drawings and 3D models for efficient
+              fabrication worldwide.
             </p>
             <div className="flex mt-5 gap-3 items-center">
               {socials?.map((social) => {
                 return (
-                  <div
-                    key={social?.name}
-                    className="p-[10px] bg-[#000B47] hover:bg-[#ED4D5D] cursor-pointer duration-150"
-                  >
-                    <Image
-                      src={social?.img}
-                      width={14}
-                      height={14}
-                      priority
-                      alt={social?.name}
-                    />
-                  </div>
+                  <Link href={social?.url} target="_blank">
+                    <div
+                      key={social?.name}
+                      className="p-[10px] bg-[#000B47] hover:bg-[#ED4D5D] cursor-pointer duration-150"
+                    >
+                      <Image
+                        src={social?.img}
+                        width={14}
+                        height={14}
+                        priority
+                        alt={social?.name}
+                      />
+                    </div>
+                  </Link>
                 );
               })}
             </div>
@@ -48,12 +56,11 @@ const FooterComponent = () => {
             <div className="w-[80px] max-w-full h-[2px] mb-8 bg-[#ED4D5D]" />
             {footerOurServices?.map((service, index) => {
               return (
-                <div
-                  key={index}
-                  className="!text-white mt-3 text-[16px] xl:text-[18px] hover:text-[#ED4D5D] cursor-pointer"
-                >
-                  {service?.name}
-                </div>
+                <Link key={index} href={service?.url}>
+                  <div className="!text-white mt-3 text-[16px] xl:text-[18px] hover:text-[#ED4D5D] cursor-pointer">
+                    {service?.name}
+                  </div>
+                </Link>
               );
             })}
           </div>
@@ -102,7 +109,11 @@ const FooterComponent = () => {
           <div className="!text-white text-[14px]">
             Copyright © 2024. All Rights Reserved.
           </div>
-          <div className="!text-white text-[14px]">Power by @Archibuild.ai</div>
+          <div className="!text-white text-[14px]">
+            <Link href={"https://archibuild.ai"} target="_blank">
+              Power by @Archibuild.ai
+            </Link>
+          </div>
         </div>
       </div>
     </>

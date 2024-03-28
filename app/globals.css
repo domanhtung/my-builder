@@ -511,3 +511,16 @@ body {
     display: none;
   }
 }
+.animation-slide {
+  width: fit-content;
+  animation: slideInfinity 10s linear infinite;
+}
+
+@keyframes slideInfinity {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(calc(-50% - 10px), 0);
+  }
+}

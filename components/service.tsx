@@ -6,7 +6,7 @@ import { Autoplay } from "swiper/modules";
 
 const HomeService = () => {
   return (
-    <div className="mt-10 pb-[120px] overflow-hidden">
+    <div className="mt-5 lg:mt-10 pb-10 lg:pb-[120px] overflow-hidden">
       <div className="container mx-auto">
         <div className="px-5 text-[18px] xl:text-[22px] font-semibold text-[#233FD6]">
           What We Offer

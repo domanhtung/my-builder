@@ -4,8 +4,11 @@ import Link from "next/link";
 import { navname } from "../app/constants/home";
 import clsx from "clsx";
 import { useEffect, useRef, useState } from "react";
+import { scrollToView } from "@/app/utils";
+import { useRouter } from "next/navigation";
 
 const HeaderComponent = () => {
+  const router = useRouter();
   const filterRef = useRef<any>();
   const filterItemRef = useRef<any>();
   const stickyRef = useRef<any>();
@@ -89,7 +92,7 @@ const HeaderComponent = () => {
               );
             })}
           </div>
-          <Link href={"/"} className="py-3">
+          <Link href={"https://archibuild.ai"} target="_blank" className="py-3">
             <Image
               src={"/images/logo.png"}
               className="w-[120px] h-[29px] xl:w-[166px] xl:h-[40px]"
@@ -149,7 +152,12 @@ const HeaderComponent = () => {
                 </form>
               </div>
             </div>
-            <button className="theme-btn hidden lg:block">Get In Touch</button>
+            <button
+              className="theme-btn hidden lg:block"
+              onClick={() => scrollToView("contact", router)}
+            >
+              Get In Touch
+            </button>
           </div>
         </div>
       </header>
