@@ -97,7 +97,7 @@ const Banner = () => {
           <p className="text-[18px] xl:text-[20px] !text-[#ED4D5D] font-semibold">
             Welcome to Sailo
           </p>
-          <h1 className="!text-white text-[40px] lg:text-[58px] xl:text-[70px] font-bold">
+          <h1 className="!text-white text-[30px] md:text-[40px] lg:text-[58px] xl:text-[70px] font-bold">
             Quality Steel Detailing Services, Competitive Pricing
           </h1>
           <p className="max-w-[780px] text-[18px] xl:text-[20px] !text-white">
