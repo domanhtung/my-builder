@@ -6,7 +6,6 @@ import { serveContents, servicesContent } from "../../constants/service";
 import ShopDrawing from "../components/shop-drawing";
 
 export default function Service({ params }: { params: { slug: string } }) {
-  console.log(params);
   const currentService = serveContents?.find((s) => s.key === params.slug);
 
   return (
@@ -28,7 +27,7 @@ export default function Service({ params }: { params: { slug: string } }) {
           <div className="px-5">
             <ShopDrawing />
             <div className="mt-8 text-[26px] lg:text-[35px] font-bold">Related Service</div>
-            <div className="grid grid-cols-2 gap-7">
+            <div className="grid md:grid-cols-2 gap-7">
               {[serviceContent?.[0], serviceContent?.[1]]?.map(
                 (content, index) => {
                   return (
