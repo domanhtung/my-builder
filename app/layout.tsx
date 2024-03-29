@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     siteName: "Archibuild",
     images: [
       {
-        url: "/images/thumbnail.png",
+        url: "https://my-builder.netlify.app/images/thumbnail.png",
       },
     ],
     locale: "en_US",
