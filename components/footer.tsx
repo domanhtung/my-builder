@@ -29,9 +29,9 @@ const FooterComponent = () => {
               fabrication worldwide.
             </p>
             <div className="flex mt-5 gap-3 items-center">
-              {socials?.map((social) => {
+              {socials?.map((social, index) => {
                 return (
-                  <Link href={social?.url} target="_blank">
+                  <Link key={index} href={social?.url} target="_blank">
                     <div
                       key={social?.name}
                       className="p-[10px] bg-[#000B47] hover:bg-[#ED4D5D] cursor-pointer duration-150"
