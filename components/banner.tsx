@@ -23,7 +23,7 @@ const BannerContentItem = ({ value, index, isAnimate }: ItemProps) => {
   useEffect(() => {
     if (isAnimate) {
       const numberPercent =
-        value?.numb > 25 ? Math?.floor(value?.numb / 25) : 1;
+        value?.numb > 50 ? Math?.floor(value?.numb / 50) : 1;
       const intervalId = setInterval(() => {
         if (ref?.current) {
           currentNumber += numberPercent;
@@ -34,7 +34,7 @@ const BannerContentItem = ({ value, index, isAnimate }: ItemProps) => {
             ref.current.innerHTML = currentNumber + "+";
           }
         }
-      }, 30);
+      }, 60);
       return () => clearInterval(intervalId);
     }
   }, [isAnimate]);
@@ -111,10 +111,7 @@ const Banner = () => {
         </div>
       </div>
       <div className="container relative mt-[-165px] mx-auto px-5 lg:px-[120px] z-[2]">
-        <div
-          ref={currentRef}
-          className="grid md:grid-cols-4 p-5 xl:p-10 gap-5 md:gap-0 z-[2] bg-white shadow-xl"
-        >
+        <div className="grid md:grid-cols-4 p-5 xl:p-10 gap-5 md:gap-0 z-[2] bg-white shadow-xl">
           {bannerContents?.map((value, index) => {
             return (
               <BannerContentItem
@@ -125,6 +122,7 @@ const Banner = () => {
               />
             );
           })}
+          <div ref={currentRef} />
         </div>
       </div>
     </>

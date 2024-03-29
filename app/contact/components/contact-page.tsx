@@ -99,7 +99,7 @@ const ContactPage = () => {
       <div className="mt-10 lg:mt-[120px] text-[28px] lg:text-[35px] text-center font-bold">
         Have Any Question?
       </div>
-      <p className="max-w-[440px] mt-3 lg:mt-5 mx-auto text-center opacity-70">
+      <p className="max-w-[570px] mt-3 lg:mt-5 mx-auto text-center opacity-70">
         If you have any inquiries, please don&apos;t hesitate to leave us a message
         here. We will respond promptly. Thank you for your consideration.
       </p>

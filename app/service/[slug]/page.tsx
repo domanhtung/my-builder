@@ -115,18 +115,21 @@ export default function Service({ params }: { params: { slug: string } }) {
             <div className="blog-sidebar relative mt-10 pb-3 text-[23px] font-bold">
               Newsletter
             </div>
-            <div className="mt-5 text-[18px]">Join 20,000 Sabscribers!</div>
-            <form className="wpo-newsletter-widget">
+            <div className="!text-white mt-5">Get latest updates and offers</div>
+            <div className="flex mt-2 items-center border !border-[#ED4D5D]">
               <input
-                type="email"
-                className="mt-5 outline-none"
-                placeholder="Email Address"
+                className="!text-white w-full h-[45px] px-5 bg-transparent outline-none"
+                placeholder="Your email"
               />
-              <button type="submit">Sign Up</button>
-            </form>
-            <div className="text-[15px]">
-              By signing up you agree to our{" "}
-              <span className="font-bold">Privecy Policy</span>
+              <button className="flex w-[45px] min-w-[45px] h-[45px] items-center justify-center !bg-[#ED4D5D]">
+                <Image
+                  src={"/images/icon_send_email.svg"}
+                  width={19}
+                  height={19}
+                  priority
+                  alt="send email"
+                />
+              </button>
             </div>
           </div>
         </div>

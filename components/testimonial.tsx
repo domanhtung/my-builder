@@ -8,7 +8,7 @@ const Testimonial = () => {
   return (
     <div className="container mx-auto pt-10 lg:pt-20 pb-20 px-5">
       <div className="text-[18px] xl:text-[22px] font-semibold text-[#233FD6]">
-        testimonial
+        Testimonial
       </div>
       <div className="text-[35px] xl:text-[50px] font-bold">
         {"What Our Clients Say's"}
