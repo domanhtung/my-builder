@@ -5,10 +5,10 @@ const Partners = () => {
   return (
     <div className="container mx-auto px-5 pt-10 lg:pt-20">
       <div className="text-[18px] xl:text-[22px] font-semibold text-[#233FD6]">
-        testimonial
+        Meet our partners
       </div>
       <div className="text-[35px] xl:text-[50px] font-bold">
-        {"What Our Clients Say's"}
+        {"Our Clients"}
       </div>
       <div className="mt-10 overflow-hidden">
         <div className="animation-slide flex gap-5">
@@ -16,7 +16,7 @@ const Partners = () => {
             return (
               <div
                 key={index}
-                className="flex py-3 px-10 items-center justify-center bg-[#1E2E3E] cursor-pointer bg-opacity-10 hover:bg-opacity-30"
+                className="flex py-3 px-10 items-center justify-center partner-bg cursor-pointer"
               >
                 <Image
                   src={partner?.img}

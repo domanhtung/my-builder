@@ -3,27 +3,35 @@ import { serviceKey } from "./key";
 
 export const servicesContent = [
   {
-    name: "Mechanical Engineering",
+    name: "Miscellaneous Steel",
     value: 5,
   },
   {
-    name: "Petroleum Refinery",
+    name: "Stair and Handrail Detailing",
     value: 7,
   },
   {
-    name: "Power & Energy",
+    name: "Pre Engineered Building",
     value: 3,
   },
   {
-    name: "Electrical & Power",
+    name: "Steel Fabrication Detailing",
     value: 6,
   },
   {
-    name: "Sanitary & Plumbing",
+    name: "Joist Detailing",
     value: 2,
   },
   {
-    name: "Industrial Construction",
+    name: "Point Cloud BIM Services",
+    value: 8,
+  },
+  {
+    name: "Precast Panel Detailing",
+    value: 8,
+  },
+  {
+    name: "Curtain Wall Detailing",
     value: 8,
   },
 ];

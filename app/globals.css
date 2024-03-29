@@ -524,3 +524,7 @@ body {
     transform: translate(calc(-50% - 10px), 0);
   }
 }
+
+.partner-bg {
+  background-color: rgb(var(--background-content-rgb));
+}
