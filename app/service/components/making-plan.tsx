@@ -13,7 +13,7 @@ const MarkingPlan = () => {
       {markingPlanContentList?.map((content, index) => {
         return (
           <div key={index}>
-            <h2 className="mt-8 text-[26px] lg:text-[25px] font-bold uppercase">
+            <h2 className="mt-10 text-[26px] lg:text-[25px] font-bold uppercase">
               {content.title}
             </h2>
             <p>{content.content}</p>

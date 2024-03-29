@@ -119,6 +119,11 @@ const HeaderComponent = () => {
                     <Link
                       href={`${nav?.url}`}
                       className="px-3 text-[16px] xl:text-[18px] font-semibold"
+                      target={
+                        nav.key === pathnameObj.visualization
+                          ? "_blank"
+                          : "_self"
+                      }
                     >
                       {nav?.name}
                     </Link>

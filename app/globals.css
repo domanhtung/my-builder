@@ -326,8 +326,15 @@ body {
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-top: 20px solid #fff;
+  border-top: 20px solid rgb(var(--background-start-rgb));
   content: "";
+}
+.no-scroll::-webkit-scrollbar {
+  display: none;
+}
+.no-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 .project-bg {
   background: rgb(var(--background-content-rgb));
@@ -472,12 +479,20 @@ body {
   width: 50px;
   height: 50px;
   top: calc(50% - 25px);
-  background: #ffffff !important;
+  background: #fd8995 !important;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  border: 2px solid #ed4d5d;
   z-index: 2;
+}
+.sticky-service {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+  max-height: calc(100vh - 100px);
+  overflow: auto;
 }
 .swiper-button:hover {
   background: #ed4d5d !important;
@@ -516,6 +531,11 @@ body {
 @media (max-width: 1023px) {
   .wpo-breadcumb-area {
     min-height: 300px;
+  }
+  .sticky-service {
+    position: relative;
+    top: 0;
+    max-height: none;
   }
 }
 @media (max-width: 767px) {

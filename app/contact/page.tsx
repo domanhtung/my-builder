@@ -27,7 +27,7 @@ export default function Contact() {
           height="450"
           className="w-full h-full border-0"
           loading="lazy"
-          src={`https://www.google.com/maps/embed/v1/place?q=Shophouse%202B%2C%201st%20floor%20Green%20Pearl%20Mega%20Mall%2C%20No%20378%2C%20Minh%20Khai%20Road%2C%20Hai%20Ba%20Trung%20District%2C%20Hanoi%2C%20Vietnam&key=${googleMapKey}`}
+          src={`https://www.google.com/maps/embed/v1/place?q=10%20P.%20Ch%C6%B0%C6%A1ng%20D%C6%B0%C6%A1ng%20%C4%90%E1%BB%99%2C%20Ch%C6%B0%C6%A1ng%20D%C6%B0%C6%A1ng%20%C4%90%E1%BB%99%2C%20Ho%C3%A0n%20Ki%E1%BA%BFm%2C%20H%C3%A0%20N%E1%BB%99i&key=${googleMapKey}`}
         ></iframe>
       </div>
     </div>

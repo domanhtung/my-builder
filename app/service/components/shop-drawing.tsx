@@ -13,7 +13,7 @@ const ShopDrawing = () => {
         priority
         alt="img"
       />
-      <h2 className="mt-8 text-[26px] lg:text-[35px] font-bold">SHOP DRAWING SERVICES</h2>
+      <h2 className="mt-10 text-[26px] lg:text-[35px] font-bold">SHOP DRAWING SERVICES</h2>
       <p className="mt-1 font-bold">What are Shop Drawings?</p>
       <p>
         Shop drawings are collections of sketches created by various
@@ -24,7 +24,7 @@ const ShopDrawing = () => {
         precast concrete, windows, appliances, cabinets, air handling units, and
         millwork.
       </p>
-      <p className="mt-5 font-bold">
+      <p className="mt-3 font-bold">
         What are the various types of Shop Drawing Services?
       </p>
       <p>
@@ -37,8 +37,8 @@ const ShopDrawing = () => {
       {shopDrawingContentList?.map((content, index) => {
         return (
           <div key={index}>
-            <h2 className="mt-8 text-[26px] lg:text-[25px] font-bold">{content.title}</h2>
-            <div className="grid md:grid-cols-2 gap-5 mt-5 items-center">
+            <h2 className="mt-10 text-[26px] lg:text-[25px] font-bold">{content.title}</h2>
+            <div className="grid md:grid-cols-2 gap-5 mt-3 items-center">
               <p className={clsx(index % 2 === 0 && "md:order-last")}>
                 {content.content}
               </p>
@@ -54,7 +54,7 @@ const ShopDrawing = () => {
           </div>
         );
       })}
-      <h2 className="mt-8 text-[26px] lg:text-[25px] font-bold">
+      <h2 className="mt-10 text-[26px] lg:text-[25px] font-bold">
         FACADE SHOP DRAWINGS SERVICES
       </h2>
       <Image

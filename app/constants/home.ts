@@ -110,42 +110,21 @@ export const testimonials = [
     name: "Hanial nilton jhon",
     job: "Managin dirctor",
     comment:
-      "Meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself",
+      "Archibuild's steel detailing service surpassed our expectations. Their precision and professionalism kept our project on track and within budget. Highly recommend their expertise!",
   },
   {
     img: "/images/testimonial_2.jpg",
     name: "Cathi Falcon Ami",
     job: "CEO Barta",
     comment:
-      "Meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself",
+      "Thanks to Jodie and team, our project was completed on time and within budget. Highly recommend their reliable steel detailing services.",
   },
   {
     img: "/images/testimonial_3.jpg",
     name: "Jenelia Orkid pasa",
     job: "Fashion Designer",
     comment:
-      "Meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself",
-  },
-  {
-    img: "/images/testimonial_1.jpg",
-    name: "Hanial nilton jhon",
-    job: "Managin dirctor",
-    comment:
-      "Meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself",
-  },
-  {
-    img: "/images/testimonial_2.jpg",
-    name: "Cathi Falcon Ami",
-    job: "CEO Barta",
-    comment:
-      "Meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself",
-  },
-  {
-    img: "/images/testimonial_3.jpg",
-    name: "Jenelia Orkid pasa",
-    job: "Fashion Designer",
-    comment:
-      "Meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself",
+      "Archibuild's attention to detail and responsiveness made our steel detailing process seamless. They're now our go-to for precision work.",
   },
 ];
 

@@ -33,7 +33,7 @@ const Testimonial = () => {
             return (
               <SwiperSlide key={index} className="pt-5">
                 <div className="testimonial-card">
-                  <div className="content p-5 xl:p-10">
+                  <div className="content h-[180px] p-5 xl:p-10">
                     <p>{value?.comment}</p>
                   </div>
                   <div className="flex py-10 px-10 gap-5 items-center">

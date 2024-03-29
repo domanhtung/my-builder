@@ -65,7 +65,8 @@ const ContactPage = () => {
           </div>
           <div className="py-2 lg:py-3 text-[24px] lg:text-[30px]">Address</div>
           <p className="opacity-70 text-[14px] lg:text-[16px]">
-            7 Green Lake Street Crawfordsville, IN 47933
+            No10, Chuong Duong Do street, Hoan Kiem district, Ha Noi city,
+            Vietnam
           </p>
         </div>
         <div className="px-5 py-8 text-center shadow-light">
@@ -79,8 +80,7 @@ const ContactPage = () => {
             />
           </div>
           <div className="py-3 text-[30px]">Email Us</div>
-          <p className="opacity-70">sailo@gmail.com</p>
-          <p className="opacity-70">helloyou@gmail.com</p>
+          <p className="opacity-70">hello@archibuild.ai</p>
         </div>
         <div className="px-5 py-8 text-center shadow-light">
           <div className="w-fit p-5 mx-auto rounded-full bg-[#f5f5f5]">
@@ -93,16 +93,15 @@ const ContactPage = () => {
             />
           </div>
           <div className="py-3 text-[30px]">Call Now</div>
-          <p className="opacity-70">+1 800 123 456 789</p>
-          <p className="opacity-70">+1 800 123 654 987</p>
+          <p className="opacity-70">+84 337 778 715</p>
         </div>
       </div>
       <div className="mt-10 lg:mt-[120px] text-[28px] lg:text-[35px] text-center font-bold">
         Have Any Question?
       </div>
       <p className="max-w-[440px] mt-3 lg:mt-5 mx-auto text-center opacity-70">
-        It is a long established fact that a reader will be distracted content
-        of a page when looking.
+        If you have any inquiries, please don&apos;t hesitate to leave us a message
+        here. We will respond promptly. Thank you for your consideration.
       </p>
       <div className="relative pt-10 mb-[-100px] z-10 bg-light">
         <form

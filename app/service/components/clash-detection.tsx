@@ -2,7 +2,7 @@ const ClashDetection = () => {
   return (
     <div>
       <p>Clash Detection: Enhancing Construction Efficiency</p>
-      <h2 className="mt-8 text-[26px] lg:text-[25px] font-bold uppercase">
+      <h2 className="mt-10 text-[26px] lg:text-[25px] font-bold uppercase">
         What is Clash Detection?
       </h2>
       <p>
@@ -15,7 +15,7 @@ const ClashDetection = () => {
         for conflicts at an early stage, avoiding expensive rework and delays in
         construction.
       </p>
-      <h2 className="mt-8 text-[26px] lg:text-[25px] font-bold uppercase">
+      <h2 className="mt-10 text-[26px] lg:text-[25px] font-bold uppercase">
         Advantages of Clash Detection:
       </h2>
       <p>
@@ -48,7 +48,7 @@ const ClashDetection = () => {
         integrity. This focus on precision ultimately results in a safer, more
         durable, and better-performing structure.
       </p>
-      <h2 className="mt-8 text-[26px] lg:text-[25px] font-bold uppercase">
+      <h2 className="mt-10 text-[26px] lg:text-[25px] font-bold uppercase">
         Advantages of Clash Detection:
       </h2>
       <p className="py-3 italic">Case Study 1: High-Rise Office Building</p>
@@ -73,7 +73,7 @@ const ClashDetection = () => {
         approach not only saved time and money but also ensured the safety and
         well-being of patients and staff.
       </p>
-      <h2 className="mt-8 text-[26px] lg:text-[25px] font-bold uppercase">
+      <h2 className="mt-10 text-[26px] lg:text-[25px] font-bold uppercase">
         Conclusion:
       </h2>
       <p>
@@ -88,7 +88,7 @@ const ClashDetection = () => {
         that meet the needs of clients and stakeholders. Additionally, clash
         detection helps to prevent costly rework and delays during construction.
       </p>
-      <h2 className="mt-8 text-[26px] lg:text-[25px] font-bold uppercase">
+      <h2 className="mt-10 text-[26px] lg:text-[25px] font-bold uppercase">
         Our Promise of Excellence
       </h2>
       <p>
@@ -100,7 +100,7 @@ const ClashDetection = () => {
         side, meticulously detecting and resolving every clash with precision
         and care.
       </p>
-      <h2 className="mt-8 text-[26px] lg:text-[25px] font-bold uppercase">
+      <h2 className="mt-10 text-[26px] lg:text-[25px] font-bold uppercase">
         Join the Clash Detection Revolution
       </h2>
       <p>

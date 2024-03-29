@@ -2,7 +2,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { pathnameObj, serviceContent } from "@/app/constants/home";
 import Image from "next/image";
-import { Autoplay } from "swiper/modules";
+import { Navigation } from "swiper/modules";
+import { ArrowLeft, ArrowRight } from "@/app/constants/arrow";
 
 const HomeService = () => {
   return (
@@ -10,28 +11,28 @@ const HomeService = () => {
       id={pathnameObj.service}
       className="pt-5 lg:pt-10 pb-10 lg:pb-[120px] overflow-hidden"
     >
-      <div className="container mx-auto">
+      <div className="container relative mx-auto">
         <div className="px-5 text-[18px] xl:text-[22px] font-semibold text-[#233FD6]">
           What We Offer
         </div>
         <div className="px-5 text-[35px] xl:text-[50px] font-bold">
           Our Services
         </div>
-        <div className="slider-service mt-5 pl-5">
+        <div className="slider-service mt-5 px-5 md:pl-5 md:pr-0">
           <Swiper
             slidesPerView={1}
             spaceBetween={20}
             loop
-            autoplay={{
-              delay: 5000,
-              disableOnInteraction: false,
-            }}
-            modules={[Autoplay]}
             breakpoints={{
               640: {
                 slidesPerView: "auto",
               },
             }}
+            navigation={{
+              nextEl: ".service-button-next",
+              prevEl: ".service-button-prev",
+            }}
+            modules={[Navigation]}
             className="mySwiper"
           >
             {serviceContent?.map((content, index) => {
@@ -72,6 +73,14 @@ const HomeService = () => {
               );
             })}
           </Swiper>
+        </div>
+        <div className="flex pt-10 px-5 gap-10 justify-center">
+          <div className="!relative md:!absolute swiper-button swiper-button-prev service-button-prev items-center">
+            <ArrowLeft />
+          </div>
+          <div className="!relative md:!absolute swiper-button swiper-button-next service-button-next items-center">
+            <ArrowRight />
+          </div>
         </div>
       </div>
     </div>
