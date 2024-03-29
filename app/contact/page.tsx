@@ -1,12 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import ContactPage from "./components/contact-page";
+import Loading from "../loader/loading";
 
 export default function Contact() {
   const googleMapKey = process?.env?.GOOGLE_MAP_KEY || "";
 
   return (
     <div>
+      <Loading />
       <div className="wpo-breadcumb-area">
         <div className="pt-10 lg:pt-[80px] text-center">
           <h1 className="!text-white text-[45px] lg:text-[60px] font-bold">

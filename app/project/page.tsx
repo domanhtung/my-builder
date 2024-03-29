@@ -7,14 +7,16 @@ import "swiper/css";
 import { Navigation } from "swiper/modules";
 import { ArrowLeft, ArrowRight } from "../constants/arrow";
 import HomeContact from "@/components/contact";
+import Loading from "../loader/loading";
 
 export default function Project() {
   return (
     <div>
+      <Loading />
       <div className="wpo-breadcumb-area">
         <div className="pt-[80px] text-center">
-          <div className="text-light text-[60px] font-bold">Project Single</div>
-          <p className="text-[20px] text-light">
+          <div className="!text-white text-[60px] font-bold">Project Single</div>
+          <p className="text-[20px] !text-white">
             <Link href={"/"}>Home</Link> /{" "}
             <span className="text-[#cbd4fd]">Project Single</span>
           </p>

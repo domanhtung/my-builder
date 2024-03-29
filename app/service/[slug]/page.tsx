@@ -8,12 +8,14 @@ import { serviceKey } from "@/app/constants/key";
 import MarkingPlan from "../components/making-plan";
 import GeneralDrawing from "../components/general-drawing";
 import ClashDetection from "../components/clash-detection";
+import Loading from "@/app/loader/loading";
 
 export default function Service({ params }: { params: { slug: string } }) {
   const currentService = serveContents?.find((s) => s.key === params.slug);
 
   return (
     <div>
+      <Loading />
       <div className="wpo-breadcumb-area">
         <div className="pt-10 lg:pt-[80px] text-center">
           <h1 className="!text-white text-[45px] lg:text-[60px] font-bold">

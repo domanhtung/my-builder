@@ -8,10 +8,12 @@ import HomeService from "@/components/service";
 import Testimonial from "@/components/testimonial";
 import "swiper/css";
 import "swiper/css/pagination";
+import Loading from "./loader/loading";
 
 export default function Home() {
   return (
     <main>
+      <Loading />
       <Banner />
       <AboutUs />
       <HomeService />

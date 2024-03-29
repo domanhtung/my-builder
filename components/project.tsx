@@ -1,6 +1,7 @@
 import { projectContents } from "@/app/constants/banner";
 import { pathnameObj } from "@/app/constants/home";
 import Image from "next/image";
+import Link from "next/link";
 
 const Projects = () => {
   return (
@@ -36,16 +37,20 @@ const Projects = () => {
                     </div>
                   </div>
                   <div className="p-5">
-                    <div className="text-[20px] xl:text-[30px] font-bold cursor-pointer hover:!text-[#ED4D5D]">
-                      {project?.title}
-                    </div>
+                    <Link href={`/${pathnameObj.project}`}>
+                      <div className="text-[20px] xl:text-[30px] font-bold cursor-pointer hover:!text-[#ED4D5D]">
+                        {project?.title}
+                      </div>
+                    </Link>
                     <div className="mt-2 text-[14px] xl:text-[16px]">
                       {project?.content}
                     </div>
                     <div className="project-readmore flex w-fit items-center gap-2 mt-5 cursor-pointer">
-                      <span className="text-[16px] xl:text-[18px] font-bold">
-                        READ MORE
-                      </span>
+                      <Link href={`/${pathnameObj.project}`}>
+                        <span className="text-[16px] xl:text-[18px] font-bold">
+                          READ MORE
+                        </span>
+                      </Link>
                       <svg
                         width="17"
                         height="17"

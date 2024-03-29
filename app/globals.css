@@ -310,7 +310,7 @@ body {
 }
 .btn_history a:hover {
   background: #ed4d5d !important;
-  color: #fff;
+  color: #fff !important;
 }
 .testimonial-card .content {
   background: rgb(var(--background-start-rgb));
@@ -558,4 +558,129 @@ body {
 }
 .input-contact-error {
   border: 1px solid #dc3545;
+}
+.big_loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: animationBigLoader 2s linear infinite;
+}
+@keyframes animationBigLoader {
+  0% {
+    top: 0;
+    left: 0;
+    transform: rotate(0);
+  }
+  15% {
+    top: 0;
+    left: 0;
+    transform: rotate(0);
+  }
+  45% {
+    top: 6px;
+    left: 32px;
+    transform: rotate(120deg);
+  }
+  55% {
+    top: 6px;
+    left: 32px;
+    transform: rotate(120deg);
+  }
+  85% {
+    top: 0;
+    left: 0;
+    transform: rotate(0);
+  }
+  100% {
+    top: 0;
+    left: 0;
+    transform: rotate(0);
+  }
+}
+.medium_loader {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: animationMediumLoader 2s linear infinite;
+}
+@keyframes animationMediumLoader {
+  0% {
+    bottom: 0;
+    right: 0;
+    transform: rotate(0);
+  }
+  15% {
+    bottom: 0;
+    right: 0;
+    transform: rotate(0);
+  }
+  45% {
+    bottom: 0;
+    right: 40px;
+  }
+  55% {
+    bottom: 0;
+    right: 40px;
+  }
+  85% {
+    bottom: 0;
+    right: 0;
+    transform: rotate(0);
+  }
+  100% {
+    bottom: 0;
+    right: 0;
+    transform: rotate(0);
+  }
+}
+.small_loader {
+  position: absolute;
+  bottom: 0;
+  left: 36px;
+  animation: animationSmallLoader 2s linear infinite;
+}
+@keyframes animationSmallLoader {
+  0% {
+    bottom: 0;
+    left: 36px;
+    transform: rotate(0);
+  }
+  15% {
+    bottom: 0;
+    left: 36px;
+    transform: rotate(0);
+  }
+  45% {
+    bottom: -4px;
+    left: -1px;
+    transform: rotate(120deg);
+  }
+  55% {
+    bottom: -4px;
+    left: -1px;
+    transform: rotate(120deg);
+  }
+  85% {
+    bottom: 0;
+    left: 36px;
+    transform: rotate(0);
+  }
+  100% {
+    bottom: 0;
+    left: 36px;
+    transform: rotate(0);
+  }
+}
+.animation-loading-end {
+  opacity: 1;
+  animation: loadingEnd 0.6s linear;
+}
+
+@keyframes loadingEnd {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
