@@ -30,6 +30,7 @@ const ContactPage = () => {
       !dataForm?.service
     ) {
       toast.error("Please fill all required fields");
+      setIsSubmitting(false);
       return;
     }
     try {
