@@ -1,4 +1,4 @@
-import { footerOurServices } from "@/app/constants/home";
+import { footerOurServices, serviceContent } from "@/app/constants/home";
 
 const HomeContact = () => {
   return (
@@ -23,10 +23,10 @@ const HomeContact = () => {
           </div>
           <select className="input w-full mt-5 px-3 py-2 outline-none border-b border-[#ebebeb]">
             <option value={""}>Service</option>
-            {footerOurServices?.map((service, index) => {
+            {serviceContent?.map((service, index) => {
               return (
-                <option key={index} value={service?.name}>
-                  {service?.name}
+                <option key={index} value={service?.title}>
+                  {service?.title}
                 </option>
               );
             })}

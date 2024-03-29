@@ -26,7 +26,7 @@ const Projects = () => {
                   />
                 </div>
                 <div className="bg-light flex-1">
-                  <div className="project-card relative flex w-fit mx-auto mt-[-19px] text-[12px] xl:text-[15px] bg-[#ED4D5D] z-[1]">
+                  <div className="project-card relative flex w-fit mx-auto mt-[-19px] text-[12px] xl:text-[15px] !bg-[#ED4D5D] z-[1]">
                     <div className="py-2 px-3 xl:px-4 !text-white">
                       {project?.time}
                     </div>
@@ -35,7 +35,7 @@ const Projects = () => {
                     </div>
                   </div>
                   <div className="p-5">
-                    <div className="text-[20px] xl:text-[30px] font-bold cursor-pointer hover:text-[#ED4D5D]">
+                    <div className="text-[20px] xl:text-[30px] font-bold cursor-pointer hover:!text-[#ED4D5D]">
                       {project?.title}
                     </div>
                     <div className="mt-2 text-[14px] xl:text-[16px]">

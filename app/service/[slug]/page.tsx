@@ -4,6 +4,10 @@ import { serviceContent } from "../../constants/home";
 import HomeContact from "@/components/contact";
 import { serveContents, servicesContent } from "../../constants/service";
 import ShopDrawing from "../components/shop-drawing";
+import { serviceKey } from "@/app/constants/key";
+import MarkingPlan from "../components/making-plan";
+import GeneralDrawing from "../components/general-drawing";
+import ClashDetection from "../components/clash-detection";
 
 export default function Service({ params }: { params: { slug: string } }) {
   const currentService = serveContents?.find((s) => s.key === params.slug);
@@ -25,8 +29,19 @@ export default function Service({ params }: { params: { slug: string } }) {
       <div className="max-w-[1300px] grid lg:grid-cols-3 mt-10 lg:mt-[120px] mx-auto pb-40 gap-10">
         <div className="lg:col-span-2">
           <div className="px-5">
-            <ShopDrawing />
-            <div className="mt-8 text-[26px] lg:text-[35px] font-bold">Related Service</div>
+            {currentService?.key === serviceKey?.shopDrawing && <ShopDrawing />}
+            {currentService?.key === serviceKey?.markingPlans && (
+              <MarkingPlan />
+            )}
+            {currentService?.key === serviceKey?.generalDrawings && (
+              <GeneralDrawing />
+            )}
+            {currentService?.key === serviceKey?.clashPlan && (
+              <ClashDetection />
+            )}
+            <div className="mt-8 text-[26px] lg:text-[35px] font-bold">
+              Related Service
+            </div>
             <div className="grid md:grid-cols-2 gap-7">
               {[serviceContent?.[0], serviceContent?.[1]]?.map(
                 (content, index) => {
@@ -54,7 +69,7 @@ export default function Service({ params }: { params: { slug: string } }) {
                             alt="icon"
                           />
                         </div>
-                        <div className="mt-2 text-[25px] font-bold hover:text-[#ED4D5D] cursor-pointer">
+                        <div className="mt-2 text-[25px] font-bold hover:!text-[#ED4D5D] cursor-pointer">
                           {content?.title}
                         </div>
                         <div className="mt-2 opacity-80">
@@ -70,12 +85,12 @@ export default function Service({ params }: { params: { slug: string } }) {
           <HomeContact />
         </div>
         <div className="px-5">
-          <div className="flex w-full p-[6px] bg-[#ED4D5D] bg-opacity-15 rounded-[6px]">
+          <div className="flex w-full p-[6px] !bg-[#ED4D5D] !bg-opacity-15 rounded-[6px]">
             <input
               className="w-full px-3 bg-transparent outline-none"
               placeholder="Search Post..."
             />
-            <button className="flex w-[50px] min-w-[50px] h-[50px] items-center justify-center bg-[#ED4D5D] rounded-[6px]">
+            <button className="flex w-[50px] min-w-[50px] h-[50px] items-center justify-center !bg-[#ED4D5D] rounded-[6px]">
               <Image
                 src={"/images/icon_find.svg"}
                 width={20}
@@ -98,7 +113,7 @@ export default function Service({ params }: { params: { slug: string } }) {
                   <div className="flex w-[28px] h-[28px] items-center justify-center bg-[#fafbfe] !text-black group-hover:!text-[#ED4D5D] rounded-full">
                     {index + 1}
                   </div>
-                  <div className="group-hover:text-[#ED4D5D]">
+                  <div className="group-hover:!text-[#ED4D5D]">
                     {value?.name}
                   </div>
                 </div>

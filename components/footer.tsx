@@ -34,7 +34,7 @@ const FooterComponent = () => {
                   <Link key={index} href={social?.url} target="_blank">
                     <div
                       key={social?.name}
-                      className="p-[10px] bg-[#000B47] hover:bg-[#ED4D5D] cursor-pointer duration-150"
+                      className="p-[10px] bg-[#000B47] hover:!bg-[#ED4D5D] cursor-pointer duration-150"
                     >
                       <Image
                         src={social?.img}
@@ -53,11 +53,11 @@ const FooterComponent = () => {
             <div className="pb-2 text-[25px] xl:text-[30px] font-semibold !text-white">
               Our Services
             </div>
-            <div className="w-[80px] max-w-full h-[2px] mb-8 bg-[#ED4D5D]" />
+            <div className="w-[80px] max-w-full h-[2px] mb-8 !bg-[#ED4D5D]" />
             {footerOurServices?.map((service, index) => {
               return (
                 <Link key={index} href={service?.url}>
-                  <div className="!text-white mt-3 text-[16px] xl:text-[18px] hover:text-[#ED4D5D] cursor-pointer">
+                  <div className="!text-white mt-3 text-[16px] xl:text-[18px] hover:!text-[#ED4D5D] cursor-pointer">
                     {service?.name}
                   </div>
                 </Link>
@@ -68,12 +68,12 @@ const FooterComponent = () => {
             <div className="pb-2 text-[25px] xl:text-[30px] font-semibold !text-white">
               Navigalion
             </div>
-            <div className="w-[80px] max-w-full h-[2px] mb-8 bg-[#ED4D5D]" />
+            <div className="w-[80px] max-w-full h-[2px] mb-8 !bg-[#ED4D5D]" />
             {footerNavigalion?.map((service, index) => {
               return (
                 <div
                   key={index}
-                  className="!text-white mt-3 text-[16px] xl:text-[18px] hover:text-[#ED4D5D] cursor-pointer"
+                  className="!text-white mt-3 text-[16px] xl:text-[18px] hover:!text-[#ED4D5D] cursor-pointer"
                 >
                   {service?.name}
                 </div>
@@ -84,14 +84,14 @@ const FooterComponent = () => {
             <div className="pb-2 text-[25px] xl:text-[30px] font-semibold !text-white">
               Newsletter
             </div>
-            <div className="w-[80px] max-w-full h-[2px] mb-8 bg-[#ED4D5D]" />
+            <div className="w-[80px] max-w-full h-[2px] mb-8 !bg-[#ED4D5D]" />
             <div className="!text-white">Get latest updates and offers</div>
-            <div className="flex mt-5 items-center border border-[#ED4D5D]">
+            <div className="flex mt-5 items-center border !border-[#ED4D5D]">
               <input
                 className="!text-white w-full h-[45px] px-5 bg-transparent outline-none"
                 placeholder="Your email"
               />
-              <button className="flex w-[45px] min-w-[45px] h-[45px] items-center justify-center bg-[#ED4D5D]">
+              <button className="flex w-[45px] min-w-[45px] h-[45px] items-center justify-center !bg-[#ED4D5D]">
                 <Image
                   src={"/images/icon_send_email.svg"}
                   width={19}
