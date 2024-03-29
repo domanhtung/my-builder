@@ -1,6 +1,7 @@
 import {
   footerNavigalion,
   footerOurServices,
+  navname,
   socials,
 } from "@/app/constants/home";
 import Image from "next/image";
@@ -69,14 +70,13 @@ const FooterComponent = () => {
               Navigalion
             </div>
             <div className="w-[80px] max-w-full h-[2px] mb-8 !bg-[#ED4D5D]" />
-            {footerNavigalion?.map((service, index) => {
+            {navname?.map((service, index) => {
               return (
-                <div
-                  key={index}
-                  className="!text-white mt-3 text-[16px] xl:text-[18px] hover:!text-[#ED4D5D] cursor-pointer"
-                >
-                  {service?.name}
-                </div>
+                <Link key={index} href={service.url}>
+                  <div className="!text-white mt-3 text-[16px] xl:text-[18px] hover:!text-[#ED4D5D] cursor-pointer">
+                    {service?.name}
+                  </div>
+                </Link>
               );
             })}
           </div>

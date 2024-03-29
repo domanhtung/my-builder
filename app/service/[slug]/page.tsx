@@ -15,7 +15,7 @@ export default function Service({ params }: { params: { slug: string } }) {
   return (
     <div>
       <div className="wpo-breadcumb-area">
-        <div className="pt-[80px] text-center">
+        <div className="pt-10 lg:pt-[80px] text-center">
           <h1 className="!text-white text-[45px] lg:text-[60px] font-bold">
             {currentService?.title}
           </h1>

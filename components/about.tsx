@@ -1,8 +1,12 @@
+import { pathnameObj } from "@/app/constants/home";
 import Image from "next/image";
 
 const AboutUs = () => {
   return (
-    <div className="container grid lg:grid-cols-2 mx-auto py-20 lg:py-[120px] px-5 gap-10 xl:gap-20 items-center">
+    <div
+      id={pathnameObj.aboutUs}
+      className="container grid lg:grid-cols-2 mx-auto py-20 lg:py-[120px] px-5 gap-10 xl:gap-20 items-center"
+    >
       <div className="about-left-image relative">
         <Image
           src={"/images/about.jpg"}

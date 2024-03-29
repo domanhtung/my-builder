@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { navname } from "../app/constants/home";
+import { navname, pathnameObj } from "../app/constants/home";
 import clsx from "clsx";
 import { useEffect, useRef, useState } from "react";
 import { scrollToView } from "@/app/utils";
@@ -108,13 +108,25 @@ const HeaderComponent = () => {
                 <div
                   className="link-header relative flex h-full px-1 xl:px-3 items-center text-white no-underline"
                   key={nav?.key}
+                  onClick={() => {
+                    nav.key !== pathnameObj.contact &&
+                      nav.key !== pathnameObj.visualization &&
+                      scrollToView(nav.key, router);
+                  }}
                 >
-                  <Link
-                    href={`${nav?.url}`}
-                    className="px-3 text-[16px] xl:text-[18px] font-semibold"
-                  >
-                    {nav?.name}
-                  </Link>
+                  {nav.key === pathnameObj.contact ||
+                  nav.key === pathnameObj.visualization ? (
+                    <Link
+                      href={`${nav?.url}`}
+                      className="px-3 text-[16px] xl:text-[18px] font-semibold"
+                    >
+                      {nav?.name}
+                    </Link>
+                  ) : (
+                    <span className="px-3 text-[16px] xl:text-[18px] font-semibold cursor-pointer">
+                      {nav?.name}
+                    </span>
+                  )}
                 </div>
               );
             })}

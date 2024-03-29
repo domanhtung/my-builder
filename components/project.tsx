@@ -1,9 +1,10 @@
 import { projectContents } from "@/app/constants/banner";
+import { pathnameObj } from "@/app/constants/home";
 import Image from "next/image";
 
 const Projects = () => {
   return (
-    <div className="project-bg py-20">
+    <div id={pathnameObj.project} className="project-bg py-20">
       <div className="container mx-auto px-5">
         <div className="text-[18px] xl:text-[22px] font-semibold text-[#7C90F9]">
           Our Projects

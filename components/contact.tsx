@@ -1,9 +1,9 @@
-import { footerOurServices, serviceContent } from "@/app/constants/home";
+import { serviceContent } from "@/app/constants/home";
 
 const HomeContact = () => {
   return (
     <div id="contact" className="container mx-auto py-20 px-5">
-      <div className="p-5 lg:p-7 shadow-[0_2px_8px_2px_rgba(22,14,71,0.1)] rounded-[20px]">
+      <div className="p-5 lg:p-7 shadow-light rounded-[20px]">
         <div className="text-[30px] font-semibold">
           {"Have project in mind? Let's discuss"}
         </div>

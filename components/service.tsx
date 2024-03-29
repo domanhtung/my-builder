@@ -1,12 +1,15 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { serviceContent } from "@/app/constants/home";
+import { pathnameObj, serviceContent } from "@/app/constants/home";
 import Image from "next/image";
 import { Autoplay } from "swiper/modules";
 
 const HomeService = () => {
   return (
-    <div className="mt-5 lg:mt-10 pb-10 lg:pb-[120px] overflow-hidden">
+    <div
+      id={pathnameObj.service}
+      className="pt-5 lg:pt-10 pb-10 lg:pb-[120px] overflow-hidden"
+    >
       <div className="container mx-auto">
         <div className="px-5 text-[18px] xl:text-[22px] font-semibold text-[#233FD6]">
           What We Offer

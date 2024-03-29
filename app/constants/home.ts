@@ -34,7 +34,8 @@ export const navname = [
   },
   {
     key: pathnameObj.visualization,
-    url: `/${pathnameObj.visualization}`,
+    // url: `/${pathnameObj.visualization}`,
+    url: "https://docsend.com/view/7ksq5ub4pgtz6pys",
     name: "Visualization",
   },
   {
@@ -203,6 +204,6 @@ export const footerNavigalion = [
   },
   {
     name: "Contact Us",
-    url: "",
+    url: `/${pathnameObj.contact}`,
   },
 ];
