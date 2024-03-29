@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "Archibuild",
     description:
       "Archibuild provides global steel detailing services, including BIM, PEB, precast panel, and rebar detailing. Our expert team delivers precise 2D drawings and 3D models for efficient fabrication worldwide.",
-    url: "https://my-builder.vercel.app",
+    url: "https://my-builder.netlify.app",
     siteName: "Archibuild",
     images: [
       {
