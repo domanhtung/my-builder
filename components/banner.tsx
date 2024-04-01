@@ -13,12 +13,29 @@ interface ItemProps {
     content: string;
   };
   index: number;
-  isAnimate: boolean;
 }
 
-const BannerContentItem = ({ value, index, isAnimate }: ItemProps) => {
+const BannerContentItem = ({ value, index }: ItemProps) => {
   let currentNumber = 0;
   const ref = useRef<any>();
+  const currentRef = useRef<any>();
+  const [isAnimate, setIsAnimate] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (currentRef?.current) {
+      const observer = new IntersectionObserver(function (entries) {
+        if (entries?.[0]?.isIntersecting) {
+          setIsAnimate(true);
+          observer?.unobserve(currentRef?.current);
+        }
+      }, {});
+      observer?.observe(currentRef?.current);
+      return () =>
+        observer?.unobserve &&
+        currentRef?.current &&
+        observer?.unobserve(currentRef?.current);
+    }
+  }, []);
 
   useEffect(() => {
     if (isAnimate) {
@@ -66,30 +83,12 @@ const BannerContentItem = ({ value, index, isAnimate }: ItemProps) => {
       <div className="text-[14px] xl:text-[18px] text-[#625F71]">
         {value?.content}
       </div>
+      <div ref={currentRef} />
     </div>
   );
 };
 
 const Banner = () => {
-  const currentRef = useRef<any>();
-  const [isAnimate, setIsAnimate] = useState<boolean>(false);
-
-  useEffect(() => {
-    if (currentRef?.current) {
-      const observer = new IntersectionObserver(function (entries) {
-        if (entries?.[0]?.isIntersecting) {
-          setIsAnimate(true);
-          observer?.unobserve(currentRef?.current);
-        }
-      }, {});
-      observer?.observe(currentRef?.current);
-      return () =>
-        observer?.unobserve &&
-        currentRef?.current &&
-        observer?.unobserve(currentRef?.current);
-    }
-  }, []);
-
   return (
     <>
       <div className="static-hero min-h-[800px] lg:min-h-screen">
@@ -118,11 +117,9 @@ const Banner = () => {
                 key={value?.title}
                 value={value}
                 index={index}
-                isAnimate={isAnimate}
               />
             );
           })}
-          <div ref={currentRef} />
         </div>
       </div>
     </>

@@ -30,7 +30,7 @@ const Loading = () => {
   return (
     <div
       className={clsx(
-        "bg-light fixed flex w-screen h-screen top-0 left-0 items-center justify-center z-50",
+        "bg-light fixed flex w-full h-full top-0 left-0 items-center justify-center z-50",
         isLoaded && "animation-loading-end"
       )}
     >
