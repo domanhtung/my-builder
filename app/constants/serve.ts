@@ -64,13 +64,13 @@ export const shopDrawingContentList = [
 export const markingPlanContentList = [
   {
     title: "Recognising Marking Plans",
-    img: "",
+    img: "/images/services/marking_plans_2.png",
     content:
       "Marking Plans are the foundation of precision in building projects; they are more than just diagrams on paper. These painstakingly drawn plans offer a comprehensive road map that leads contractors and builders through the challenging task of marking out important components on the construction site. Every step, from setting foundations to erecting complex structures, is painstakingly planned and carried out with accuracy.",
   },
   {
     title: "Handling Complexity with Simplicity",
-    img: "",
+    img: "/images/services/marking_plans_3.png",
     content:
       "In an environment where complexity is king, Marking Plans are the light. These plans make even the most difficult chores easier, whether it's identifying utility lines, drawing out complex structural parts, or demarcating property boundaries. Construction teams may confidently and clearly negotiate even the most difficult terrain with the help of Marking Plans, which provide clear and unambiguous directions.",
   },

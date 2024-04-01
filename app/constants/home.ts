@@ -82,11 +82,11 @@ export const serviceContent = [
       "We boast an exceptional in-house team renowned for their expertise and versatility in delivering Joist Detailing services with utmost accuracy and precision.",
   },
   {
-    img: "/images/services/point_cloud_bim_services.png",
+    img: "/images/services/bridge_detailing.png",
     icon: "/images/icon_service_2.svg",
-    title: "Point Cloud BIM Services",
+    title: "Bridge Detailing",
     content:
-      "Contact our expert team for point cloud to BIM services, covering Construction Documentation, Architectural 3D Modeling, Revit BIM Modeling, and Design Development.",
+      "Our expertise spans various bridge types, from pedestrian to cable-stayed. We've tackled complex plate girder bridges with features like camber, skew, and curve.",
   },
   {
     img: "/images/services/precast_panel_detailing.png",
@@ -96,11 +96,11 @@ export const serviceContent = [
       "We're the go-to for global precast panel detailing services, covering wall panels, facades, and beyond.",
   },
   {
-    img: "/images/services/curtain_wall_detailing.png",
+    img: "/images/services/clash_detection.png",
     icon: "/images/icon_service_4.svg",
-    title: "Curtain Wall Detailing",
+    title: "Clash Detection",
     content:
-      "We're the premier provider of curtain wall detailing services. Discover our comprehensive offerings, including Facade wall detailing, and request your free quote today for the best prices.",
+      "Eliminate construction conflicts swiftly with our Clash Detection service, optimizing project efficiency and minimizing costly delays.",
   },
 ];
 
@@ -152,7 +152,7 @@ export const footerOurServices = [
     url: `/${pathnameObj.service}/${serviceKey.shopDrawing}`,
   },
   {
-    name: "Marking plans",
+    name: "Marking Plans",
     url: `/${pathnameObj.service}/${serviceKey.markingPlans}`,
   },
   {

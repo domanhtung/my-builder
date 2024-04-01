@@ -1,4 +1,5 @@
 import { markingPlanContentList } from "@/app/constants/serve";
+import Image from "next/image";
 
 const MarkingPlan = () => {
   return (
@@ -10,6 +11,14 @@ const MarkingPlan = () => {
         accuracy is Marking Plans. Let us explain the importance of this
         essential blueprint and the unmatched value it adds to your initiatives.
       </p>
+      <Image
+        src={"/images/services/marking_plans_3.png"}
+        className="w-full max-w-[600px] h-auto mx-auto mt-5"
+        width={600}
+        height={416}
+        priority
+        alt="marking plan"
+      />
       {markingPlanContentList?.map((content, index) => {
         return (
           <div key={index}>
@@ -17,6 +26,16 @@ const MarkingPlan = () => {
               {content.title}
             </h2>
             <p>{content.content}</p>
+            {content?.img && (
+              <Image
+                src={content?.img}
+                className="w-full max-w-[600px] h-auto mx-auto mt-5"
+                width={600}
+                height={416}
+                priority
+                alt="marking plan"
+              />
+            )}
           </div>
         );
       })}

@@ -25,7 +25,7 @@ const FooterComponent = () => {
             </Link>
             <p className="mt-5 !text-white xl:leading-[30px] text-[14px] xl:text-[16px]">
               Archibuild provides global steel detailing services, including
-              BIM, PEB, precast panel, and rebar detailing. Our expert team
+              BIM, PEB, precast panel. Our expert team
               delivers precise 2D drawings and 3D models for efficient
               fabrication worldwide.
             </p>

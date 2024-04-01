@@ -36,7 +36,7 @@ const AboutUs = () => {
         </div>
         <p className="mt-3 text-[16px] xl:text-[18px]">
           Archibuild is your one-stop global destination for steel detailing
-          services, including BIM, PEB, precast panel, and rebar detailing. Our
+          services, including BIM, PEB, precast panel. Our
           diverse expertise and skilled team ensure precise design execution
           through 2D drawings and 3D models, facilitating efficient fabrication
           and erection methods for steel structures worldwide. With extensive

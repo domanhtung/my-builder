@@ -40,40 +40,40 @@ export default function Service({ params }: { params: { slug: string } }) {
             {currentService?.key === serviceKey?.clashPlan && (
               <ClashDetection />
             )}
+            <HomeContact />
             <div className="mt-8 text-[26px] lg:text-[35px] font-bold">
               Related Service
             </div>
-            <div className="grid md:grid-cols-2 gap-5">
+            <div className="grid md:grid-cols-2 mt-5 gap-5">
               {[serveContents?.[0], serveContents?.[1]]?.map(
                 (content, index) => {
                   return (
-                    <div key={index} className="w-full service">
-                      <div className="service-image relative">
-                        <Image
-                          src={content?.img}
-                          width={410}
-                          height={350}
-                          priority
-                          alt={content?.title}
-                        />
-                      </div>
-                      <div className="content h-[350px] p-5 lg:p-7">
-                        <Link href={content?.url}>
+                    <Link key={index} href={content?.url}>
+                      <div className="w-full service">
+                        <div className="service-image relative">
+                          <Image
+                            src={content?.img}
+                            width={410}
+                            height={350}
+                            priority
+                            alt={content?.title}
+                          />
+                        </div>
+                        <div className="content h-[350px] p-5 lg:p-7">
                           <div className="mt-2 text-[25px] font-bold hover:!text-[#ED4D5D] cursor-pointer">
                             {content?.title}
                           </div>
-                        </Link>
-                        <div className="mt-2 opacity-80">
-                          {content?.content}
+                          <div className="mt-2 opacity-80">
+                            {content?.content}
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    </Link>
                   );
                 }
               )}
             </div>
           </div>
-          <HomeContact />
         </div>
         <div className="px-5">
           <div className="sticky-service no-scroll pb-5">
@@ -115,7 +115,9 @@ export default function Service({ params }: { params: { slug: string } }) {
             <div className="blog-sidebar relative mt-10 pb-3 text-[23px] font-bold">
               Newsletter
             </div>
-            <div className="!text-white mt-5">Get latest updates and offers</div>
+            <div className="!text-white mt-5">
+              Get latest updates and offers
+            </div>
             <div className="flex mt-2 items-center border !border-[#ED4D5D]">
               <input
                 className="!text-white w-full h-[45px] px-5 bg-transparent outline-none"
