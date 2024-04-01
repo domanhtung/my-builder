@@ -20,8 +20,8 @@ export const bannerContents = [
   {
     img: "/images/4.svg",
     numb: 25,
-    title: "Historical",
-    content: "Award Winning",
+    title: "Clients",
+    content: "satisfied",
   },
 ];
 
