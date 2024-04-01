@@ -542,6 +542,10 @@ body {
   .wpo-feature-section::before {
     display: none;
   }
+  .swiper-button {
+    width: 40px;
+    height: 40px;
+  }
 }
 .animation-slide {
   width: fit-content;

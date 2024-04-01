@@ -212,7 +212,7 @@ const HeaderComponent = () => {
       </div>
       <div
         ref={scrollTopRef}
-        className="fixed right-10 !z-10 hide-scroll-top duration-500"
+        className="fixed right-2 md:right-10 !z-10 hide-scroll-top duration-500"
       >
         <div
           className="rotate-90 !relative swiper-button"
