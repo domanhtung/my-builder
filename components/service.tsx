@@ -9,7 +9,7 @@ const HomeService = () => {
   return (
     <div
       id={pathnameObj.service}
-      className="pt-5 lg:pt-10 pb-10 lg:pb-[120px] overflow-hidden"
+      className="relative pt-5 lg:pt-10 pb-10 lg:pb-[120px] overflow-hidden"
     >
       <div className="container relative mx-auto">
         <div className="px-5 text-[18px] xl:text-[22px] font-semibold text-[#233FD6]">
@@ -74,13 +74,13 @@ const HomeService = () => {
             })}
           </Swiper>
         </div>
-        <div className="flex pt-10 px-5 gap-10 justify-center">
-          <div className="!relative md:!absolute swiper-button swiper-button-prev service-button-prev items-center">
-            <ArrowLeft />
-          </div>
-          <div className="!relative md:!absolute swiper-button swiper-button-next service-button-next items-center">
-            <ArrowRight />
-          </div>
+      </div>
+      <div className="flex pt-10 px-5 gap-10 justify-center">
+        <div className="!relative md:!absolute swiper-button swiper-button-prev service-button-prev items-center">
+          <ArrowLeft />
+        </div>
+        <div className="!relative md:!absolute swiper-button swiper-button-next service-button-next items-center">
+          <ArrowRight />
         </div>
       </div>
     </div>
