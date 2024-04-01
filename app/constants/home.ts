@@ -148,7 +148,7 @@ export const socials = [
 
 export const footerOurServices = [
   {
-    name: "Shop drawing",
+    name: "Shop Drawing",
     url: `/${pathnameObj.service}/${serviceKey.shopDrawing}`,
   },
   {
