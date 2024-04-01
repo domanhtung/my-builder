@@ -1,25 +1,25 @@
 export const bannerContents = [
   {
     img: "/images/1.svg",
-    numb: 500,
+    numb: 157,
     title: "Successfully",
     content: "completed projects",
   },
   {
     img: "/images/2.svg",
-    numb: 300,
+    numb: 35,
     title: "Highly",
     content: "specialised employees",
   },
   {
     img: "/images/3.svg",
-    numb: 226,
+    numb: 10,
     title: "Countries",
     content: "around the world",
   },
   {
     img: "/images/4.svg",
-    numb: 25,
+    numb: 26,
     title: "Clients",
     content: "satisfied",
   },
