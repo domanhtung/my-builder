@@ -6,12 +6,14 @@ import clsx from "clsx";
 import { useEffect, useRef, useState } from "react";
 import { scrollToView } from "@/app/utils";
 import { useRouter } from "next/navigation";
+import { ArrowLeft } from "@/app/constants/arrow";
 
 const HeaderComponent = () => {
   const router = useRouter();
   const filterRef = useRef<any>();
   const filterItemRef = useRef<any>();
   const stickyRef = useRef<any>();
+  const scrollTopRef = useRef<any>();
   const [isShowSearch, setIsShowSearch] = useState<boolean>(false);
   const [showMobileNav, setShowMobileNav] = useState<boolean>(false);
 
@@ -39,23 +41,23 @@ const HeaderComponent = () => {
               stickyRef.current.className.replaceAll(" animation-head", "");
           }
         }
-        // if ((window as any)?.pageYOffset > 400) {
-        //   if (scrollTopRef.current.className.includes("hide-scroll-top")) {
-        //     scrollTopRef.current.className =
-        //       scrollTopRef.current.className.replace(
-        //         "hide-scroll-top",
-        //         "show-scroll-top"
-        //       );
-        //   }
-        // } else {
-        //   if (scrollTopRef.current.className.includes("show-scroll-top")) {
-        //     scrollTopRef.current.className =
-        //       scrollTopRef.current.className.replace(
-        //         "show-scroll-top",
-        //         "hide-scroll-top"
-        //       );
-        //   }
-        // }
+        if ((window as any)?.pageYOffset > 400) {
+          if (scrollTopRef.current.className.includes("hide-scroll-top")) {
+            scrollTopRef.current.className =
+              scrollTopRef.current.className.replace(
+                "hide-scroll-top",
+                "show-scroll-top"
+              );
+          }
+        } else {
+          if (scrollTopRef.current.className.includes("show-scroll-top")) {
+            scrollTopRef.current.className =
+              scrollTopRef.current.className.replace(
+                "show-scroll-top",
+                "hide-scroll-top"
+              );
+          }
+        }
       };
       window.addEventListener("scroll", onScroll, { passive: true });
       return () => window.removeEventListener("scroll", onScroll);
@@ -74,6 +76,11 @@ const HeaderComponent = () => {
       }
     }
   };
+
+  function scrollToTop() {
+    if (typeof window === "undefined") return;
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 
   return (
     <>
@@ -201,6 +208,17 @@ const HeaderComponent = () => {
               </div>
             );
           })}
+        </div>
+      </div>
+      <div
+        ref={scrollTopRef}
+        className="fixed right-10 !z-10 hide-scroll-top duration-500"
+      >
+        <div
+          className="rotate-90 !relative swiper-button"
+          onClick={() => scrollToTop()}
+        >
+          <ArrowLeft />
         </div>
       </div>
     </>

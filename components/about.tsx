@@ -16,7 +16,7 @@ const AboutUs = () => {
           priority
           alt="about"
         />
-        <div className="ab-2 overflow-hidden">
+        <div className="ab-2 overflow-hidden hidden lg:block">
           <Image
             src={"/images/about_2.png"}
             className="w-full h-auto hidden lg:block"
