@@ -39,7 +39,7 @@ const HomeService = () => {
               return (
                 <SwiperSlide
                   key={index}
-                  className="w-full sm:!w-[410px] service"
+                  className="w-full sm:!w-[410px] group cursor-pointer service"
                 >
                   <div className="service-image relative">
                     <Image
@@ -64,7 +64,7 @@ const HomeService = () => {
                         alt="icon"
                       />
                     </div>
-                    <div className="mt-2 text-[25px] font-bold hover:!text-[#ED4D5D] cursor-pointer">
+                    <div className="mt-2 text-[25px] font-bold group-hover:!text-[#ED4D5D] cursor-pointer">
                       {content?.title}
                     </div>
                     <div className="mt-2 opacity-80">{content?.content}</div>
