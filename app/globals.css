@@ -53,6 +53,10 @@ body {
 .link-header:hover span {
   color: #ed4d5d !important;
 }
+.link-header.active .submenu-nav,
+.link-header:hover .submenu-nav {
+  color: #000b47 !important;
+}
 
 .link-header::before {
   position: absolute;
@@ -382,6 +386,20 @@ body {
   background: #000b47;
   animation: animationHead 0.5s linear;
 }
+.submenu-nav::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  bottom: -5px;
+  left: 12px;
+  background: #ed4d5d;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+}
+.submenu-nav:hover::before {
+  width: 50px;
+}
 @keyframes animationHead {
   from {
     top: -86px;
@@ -454,7 +472,6 @@ body {
 .wpo-project-single-content-des-right ul {
   list-style: none;
   padding: 30px 30px;
-  box-shadow: 0px 2px 10px rgba(14, 29, 44, 0.15);
 }
 .wpo-project-single-content-des-right ul li {
   display: flex;
@@ -472,6 +489,13 @@ body {
   flex-basis: 60%;
   opacity: 0.7;
   font-weight: 400;
+}
+.truncate-3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 .swiper-button {
   position: absolute;

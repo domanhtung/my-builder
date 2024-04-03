@@ -1,3 +1,5 @@
+import { projectKey } from "./project";
+
 export const bannerContents = [
   {
     img: "/images/1.svg",
@@ -27,26 +29,29 @@ export const bannerContents = [
 
 export const projectContents = [
   {
-    img: "/images/project_1.jpg",
-    time: "01-05-2024",
-    by: "By: Manik Doe",
-    title: "Why Industry Are A Juicy Target For Cyberattack.",
+    img: "/images/projects/project_1.png",
+    time: "15-12-2023",
+    key: projectKey.speersPoint,
+    by: "By: Archibuild",
+    title: "Speers Point",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis, libero,",
+      "The recent endorsement by the New South Wales Government of a plan to convert a well-established educational establishment into cutting-edge learning spaces represents a substantial advancement in the promotion of a modern learning environment.",
   },
   {
-    img: "/images/project_2.jpg",
-    time: "01-05-2024",
-    by: "By: Manik Doe",
-    title: "Exploring The Wild Side in an Industrial Jungle.",
+    img: "/images/projects/project_5.png",
+    time: "27-09-2023",
+    key: projectKey.delnorth,
+    by: "By: Archibuild",
+    title: "Delnorth",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis, libero,",
+      "The warehouse project shown below exemplifies our ability to execute complicated structural designs with precision and efficiency.",
   },
   {
     img: "/images/project_3.jpg",
+    isCommingSoom: true,
     time: "01-05-2024",
     by: "By: Manik Doe",
-    title: "EIndustrial Profits Grow Faster.",
+    title: "EIndustrial",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis, libero,",
   },

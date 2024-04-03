@@ -112,34 +112,62 @@ const HeaderComponent = () => {
           <div className="hidden lg:flex h-[86px] items-center">
             {navname?.map((nav) => {
               return (
-                <div
-                  className="link-header relative flex h-full px-1 xl:px-3 items-center text-white no-underline"
-                  key={nav?.key}
-                  onClick={() => {
-                    nav.key !== pathnameObj.contact &&
-                      nav.key !== pathnameObj.visualization &&
-                      scrollToView(nav.key, router);
-                  }}
-                >
-                  {nav.key === pathnameObj.contact ||
-                  nav.key === pathnameObj.visualization ? (
-                    <Link
-                      href={`${nav?.url}`}
-                      className="px-3 text-[16px] xl:text-[18px] font-semibold"
-                      target={
-                        nav.key === pathnameObj.visualization
-                          ? "_blank"
-                          : "_self"
-                      }
-                    >
-                      {nav?.name}
-                    </Link>
+                <>
+                  {nav?.list ? (
+                    <div className="link-header relative group flex h-full px-1 xl:px-3 items-center text-white no-underline">
+                      <span className="px-3 text-[16px] xl:text-[18px] font-semibold cursor-pointer">
+                        {nav?.name}
+                      </span>
+                      <div
+                        className={clsx(
+                          "absolute grid w-[200px] py-5 px-3 top-[86px] left-0 opacity-0 group-hover:opacity-100 gap-5 !bg-white shadow-lg",
+                          "duration-300 group-hover:pointer-events-auto pointer-events-none translate-y-5 group-hover:translate-y-0"
+                        )}
+                      >
+                        {nav?.list?.map((value, index) => {
+                          return (
+                            <Link
+                              key={index}
+                              href={value.url}
+                              className="submenu-nav relative pl-3 !text-[#000B47] text-[14px] xl:text-[16px] font-semibold cursor-pointer"
+                            >
+                              {value?.name}
+                            </Link>
+                          );
+                        })}
+                      </div>
+                    </div>
                   ) : (
-                    <span className="px-3 text-[16px] xl:text-[18px] font-semibold cursor-pointer">
-                      {nav?.name}
-                    </span>
+                    <div
+                      className="link-header relative flex h-full px-1 xl:px-3 items-center text-white no-underline"
+                      key={nav?.key}
+                      onClick={() => {
+                        nav.key !== pathnameObj.contact &&
+                          nav.key !== pathnameObj.visualization &&
+                          scrollToView(nav.key, router);
+                      }}
+                    >
+                      {nav.key === pathnameObj.contact ||
+                      nav.key === pathnameObj.visualization ? (
+                        <Link
+                          href={`${nav?.url}`}
+                          className="px-3 text-[16px] xl:text-[18px] font-semibold"
+                          target={
+                            nav.key === pathnameObj.visualization
+                              ? "_blank"
+                              : "_self"
+                          }
+                        >
+                          {nav?.name}
+                        </Link>
+                      ) : (
+                        <span className="px-3 text-[16px] xl:text-[18px] font-semibold cursor-pointer">
+                          {nav?.name}
+                        </span>
+                      )}
+                    </div>
                   )}
-                </div>
+                </>
               );
             })}
           </div>
@@ -198,13 +226,34 @@ const HeaderComponent = () => {
                 className="relative flex h-full items-center text-white no-underline"
                 key={nav?.key}
               >
-                <Link
-                  href={`${nav?.url}`}
-                  className="text-[16px] pt-3 font-semibold"
-                  onClick={() => setShowMobileNav(false)}
-                >
-                  {nav?.name}
-                </Link>
+                {nav?.list ? (
+                  <div className="text-[16px] pt-3 group font-semibold">
+                    {nav?.name}
+                    <div className="hidden group-hover:grid gap-5 mt-5">
+                      {nav?.list?.map((value, index) => {
+                        return (
+                          <Link
+                            key={index}
+                            href={value.url}
+                            className="pl-3 !text-white text-[14px] xl:text-[16px] font-semibold cursor-pointer"
+                            onClick={() => setShowMobileNav(false)}
+                          >
+                            <span className="!text-[#ED4D5D]">{"___"}</span>{" "}
+                            {value?.name}
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  </div>
+                ) : (
+                  <Link
+                    href={`${nav?.url}`}
+                    className="text-[16px] pt-3 font-semibold"
+                    onClick={() => setShowMobileNav(false)}
+                  >
+                    {nav?.name}
+                  </Link>
+                )}
               </div>
             );
           })}

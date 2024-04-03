@@ -1,4 +1,5 @@
 import { serviceKey } from "./key";
+import { projectKey, projectNameByKey } from "./project";
 
 export const pathnameObj = {
   home: "home",
@@ -31,6 +32,18 @@ export const navname = [
     key: pathnameObj.project,
     url: `/${pathnameObj.project}`,
     name: "Projects",
+    list: [
+      {
+        key: projectKey.speersPoint,
+        url: `/${pathnameObj.project}/${projectKey.speersPoint}`,
+        name: projectNameByKey?.[projectKey?.speersPoint],
+      },
+      {
+        key: projectKey.delnorth,
+        url: `/${pathnameObj.project}/${projectKey.delnorth}`,
+        name: projectNameByKey?.[projectKey?.delnorth],
+      },
+    ],
   },
   {
     key: pathnameObj.visualization,
