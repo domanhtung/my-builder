@@ -7,7 +7,7 @@ const ProjectItem = ({ project }: any) => {
   return (
     <div className="relative group flex flex-col">
       {project?.isCommingSoom && (
-        <div className="absolute flex w-full h-full top-0 left-0 text-[26px] font-semibold items-center justify-center bg-black opacity-[0.93] z-20">
+        <div className="absolute flex w-full h-full top-0 left-0 text-[26px] font-semibold items-center justify-center bg-light opacity-[0.93] z-20">
           Coming Soon
         </div>
       )}

@@ -53,6 +53,6 @@ export const projectContents = [
     by: "By: Manik Doe",
     title: "EIndustrial",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis, libero,",
+      "We successfully completed a warehouse project that exceeded the client's expectations thanks to our comprehensive approach to structural detailing and coordination. Our proactive approach to clash detection and resolution, together with our emphasis on material cost reduction, guaranteed the project's success while achieving strict quality standards.",
   },
 ];
