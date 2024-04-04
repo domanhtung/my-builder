@@ -1,13 +1,19 @@
+"use client";
 import {
   footerNavigalion,
   footerOurServices,
   navname,
+  pathnameObj,
   socials,
 } from "@/app/constants/home";
+import { scrollToView } from "@/app/utils";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const FooterComponent = () => {
+  const router = useRouter();
+
   return (
     <>
       <div className="wpo-site-footer">
@@ -25,9 +31,8 @@ const FooterComponent = () => {
             </Link>
             <p className="mt-5 !text-white xl:leading-[24px] 2xl:leading-[30px] text-[14px] 2xl:text-[16px]">
               Archibuild provides global steel detailing services, including
-              BIM, PEB, precast panel. Our expert team
-              delivers precise 2D drawings and 3D models for efficient
-              fabrication worldwide.
+              BIM, PEB, precast panel. Our expert team delivers precise 2D
+              drawings and 3D models for efficient fabrication worldwide.
             </p>
             <div className="flex mt-5 gap-3 items-center">
               {socials?.map((social, index) => {
@@ -55,30 +60,59 @@ const FooterComponent = () => {
               Our Services
             </div>
             <div className="w-[80px] max-w-full h-[2px] mb-8 !bg-[#ED4D5D]" />
-            {footerOurServices?.map((service, index) => {
-              return (
-                <Link key={index} href={service?.url}>
-                  <div className="!text-white mt-3 text-[16px] 2xl:text-[18px] hover:!text-[#ED4D5D] cursor-pointer">
-                    {service?.name}
+            <div>
+              {footerOurServices?.map((service, index) => {
+                return (
+                  <div key={index} className="w-fit">
+                    <Link href={service?.url}>
+                      <div className="w-fit !text-white mt-3 text-[16px] 2xl:text-[18px] hover:!text-[#ED4D5D] cursor-pointer">
+                        {service?.name}
+                      </div>
+                    </Link>
                   </div>
-                </Link>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
           <div>
             <div className="pb-2 text-[25px] 2xl:text-[30px] font-semibold !text-white">
               Navigalion
             </div>
             <div className="w-[80px] max-w-full h-[2px] mb-8 !bg-[#ED4D5D]" />
-            {navname?.map((service, index) => {
-              return (
-                <Link key={index} href={service.url}>
-                  <div className="!text-white mt-3 text-[16px] 2xl:text-[18px] hover:!text-[#ED4D5D] cursor-pointer">
-                    {service?.name}
+            <div>
+              {navname?.map((nav) => {
+                return (
+                  <div
+                    className="w-fit !text-white mt-3 text-[16px] 2xl:text-[18px] hover:!text-[#ED4D5D] cursor-pointer"
+                    key={nav?.key}
+                    onClick={() => {
+                      nav.key !== pathnameObj.contact &&
+                        nav.key !== pathnameObj.visualization &&
+                        scrollToView(nav.key, router);
+                    }}
+                  >
+                    {nav.key === pathnameObj.contact ||
+                    nav.key === pathnameObj.visualization ? (
+                      <Link
+                        href={`${nav?.url}`}
+                        className="!text-white mt-3 text-[16px] 2xl:text-[18px] hover:!text-[#ED4D5D] cursor-pointer"
+                        target={
+                          nav.key === pathnameObj.visualization
+                            ? "_blank"
+                            : "_self"
+                        }
+                      >
+                        {nav?.name}
+                      </Link>
+                    ) : (
+                      <span className="!text-white mt-3 text-[16px] 2xl:text-[18px] hover:!text-[#ED4D5D] cursor-pointer">
+                        {nav?.name}
+                      </span>
+                    )}
                   </div>
-                </Link>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
           <div>
             <div className="pb-2 text-[25px] 2xl:text-[30px] font-semibold !text-white">
