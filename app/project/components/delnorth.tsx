@@ -1,11 +1,10 @@
 "use client";
 import Image from "next/image";
-import HomeContact from "@/components/contact";
 
 const Delnorth = () => {
   return (
     <div>
-      <div className="max-w-[1080px] mx-auto pb-40">
+      <div className="max-w-[1080px] mx-auto">
         <div className="grid lg:grid-cols-3 mt-20 2xl:mt-40">
           <div className="lg:col-span-2 px-5">
             <div className="text-[30px] 2xl:text-[35px] font-bold">Project Description</div>
@@ -111,7 +110,6 @@ const Delnorth = () => {
             alt="project"
           />
         </div>
-        <HomeContact />
       </div>
     </div>
   );

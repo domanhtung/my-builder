@@ -47,12 +47,12 @@ export const projectContents = [
       "The warehouse project shown below exemplifies our ability to execute complicated structural designs with precision and efficiency.",
   },
   {
-    img: "/images/project_3.jpg",
-    isCommingSoom: true,
-    time: "01-05-2024",
-    by: "By: Manik Doe",
-    title: "EIndustrial",
+    img: "/images/projects/project_7.png",
+    time: "27-08-2022",
+    key: projectKey.platformBoardwalk,
+    by: "By: Archibuild",
+    title: "Platform and Boardwalk Decking",
     content:
-      "We successfully completed a warehouse project that exceeded the client's expectations thanks to our comprehensive approach to structural detailing and coordination. Our proactive approach to clash detection and resolution, together with our emphasis on material cost reduction, guaranteed the project's success while achieving strict quality standards.",
+      "Fiberglass Reinforced Plastic (FRP) gratings are widely used in a variety of projects, thanks to their lightweight construction and exceptional corrosion resistance.",
   },
 ];
