@@ -16,8 +16,8 @@ const PlatformBoardwalk = () => {
               meticulously planned to meet the needs of public infrastructure.
               Our valued partner focuses installation correctness, even for
               minor projects. Despite logistical challenges in transit and
-              remote locations, we ensure faultless execution. Whether we're on
-              the seaside or nestled in the woods, we're committed to providing
+              remote locations, we ensure faultless execution. Whether we&apos;re on
+              the seaside or nestled in the woods, we&apos;re committed to providing
               high-quality service.
             </div>
           </div>
@@ -66,8 +66,8 @@ const PlatformBoardwalk = () => {
           </div>
           <div className="mt-3 opacity-70 leading-[30px]">
             These projects are outstanding examples of the walkway projects
-            we've successfully accomplished. Beyond managing routine activities,
-            our team's competence has significantly advanced, giving solutions
+            we&apos;ve successfully accomplished. Beyond managing routine activities,
+            our team&apos;s competence has significantly advanced, giving solutions
             in the following areas:
             <br />
             1. Consulting based only on sketches.
