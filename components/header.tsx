@@ -215,7 +215,7 @@ const HeaderComponent = () => {
       </header>
       <div
         className={clsx(
-          "block lg:hidden fixed h-screen top-0 left-0 bg-[#000b47] z-10 duration-200 overflow-hidden",
+          "block lg:hidden fixed h-screen top-0 left-0 bg-[#000b47] z-40 duration-200 overflow-hidden",
           showMobileNav ? "w-screen" : "w-0"
         )}
       >

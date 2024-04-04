@@ -5,9 +5,9 @@ import Link from "next/link";
 
 const ProjectItem = ({ project }: any) => {
   return (
-    <div className="relative group flex flex-col">
+    <div className="relative group flex flex-col z-0">
       {project?.isCommingSoom && (
-        <div className="absolute flex w-full h-full top-0 left-0 text-[26px] font-semibold items-center justify-center bg-light opacity-[0.93] z-20">
+        <div className="absolute flex w-full h-full top-0 left-0 text-[26px] font-semibold items-center justify-center bg-light opacity-[0.93] z-10">
           Coming Soon
         </div>
       )}
