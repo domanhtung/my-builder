@@ -2,7 +2,7 @@ const ClashDetection = () => {
   return (
     <div>
       <p>Clash Detection: Enhancing Construction Efficiency</p>
-      <h2 className="mt-10 text-[20px] 2xl:text-[25px] font-bold uppercase">
+      <h2 className="mt-5 text-[20px] 2xl:text-[25px] font-bold uppercase">
         What is Clash Detection?
       </h2>
       <p className="mt-2">
