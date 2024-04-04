@@ -84,7 +84,7 @@ const HeaderComponent = () => {
 
   return (
     <>
-      <header ref={stickyRef} className="fixed w-full top-0 left-0 z-20">
+      <header ref={stickyRef} className="fixed w-full top-0 left-0 z-50">
         <div className="container flex mx-auto px-5 justify-between items-center">
           <div
             className="grid lg:hidden w-[35px] h-[35px] p-[6px] items-center !bg-[#ED4D5D] rounded-[4px]"
