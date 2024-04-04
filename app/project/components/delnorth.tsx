@@ -6,9 +6,9 @@ const Delnorth = () => {
   return (
     <div>
       <div className="max-w-[1080px] mx-auto pb-40">
-        <div className="grid lg:grid-cols-3 mt-20 lg:mt-40">
+        <div className="grid lg:grid-cols-3 mt-20 2xl:mt-40">
           <div className="lg:col-span-2 px-5">
-            <div className="text-[30px] lg:text-[35px] font-bold">Project Description</div>
+            <div className="text-[30px] 2xl:text-[35px] font-bold">Project Description</div>
             <div className="mt-3 opacity-70 leading-[30px]">
               The warehouse project shown below exemplifies our ability to
               execute complicated structural designs with precision and
@@ -67,7 +67,7 @@ const Delnorth = () => {
             priority
             alt="project"
           />
-          <div className="mt-8 text-[30px] lg:text-[35px] font-bold">Our approach</div>
+          <div className="mt-8 text-[30px] 2xl:text-[35px] font-bold">Our approach</div>
           <div className="mt-3 opacity-70 leading-[30px]">
             <span className="font-bold">First Assessment and Planning:</span>{" "}
             Our staff carefully considers site constraints, architectural needs,

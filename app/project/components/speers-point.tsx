@@ -5,10 +5,10 @@ import HomeContact from "@/components/contact";
 const SpeersPoint = () => {
   return (
     <div>
-      <div className="max-w-[1080px] mx-auto pb-40">
-        <div className="grid lg:grid-cols-3 mt-20 lg:mt-40">
+      <div className="max-w-[1080px] mx-auto pb-10 2xl:pb-40">
+        <div className="grid lg:grid-cols-3 mt-20 2xl:mt-40">
           <div className="lg:col-span-2 px-5">
-            <div className="text-[30px] lg:text-[35px] font-bold">Project Description</div>
+            <div className="text-[30px] 2xl:text-[35px] font-bold">Project Description</div>
             <div className="mt-3 opacity-70 leading-[30px]">
               The recent endorsement by the New South Wales Government of a plan
               to convert a well-established educational establishment into
@@ -71,7 +71,7 @@ const SpeersPoint = () => {
               alt="project"
             />
           </div>
-          <div className="mt-8 text-[30px] lg:text-[35px] font-bold">Our approach</div>
+          <div className="mt-8 text-[30px] 2xl:text-[35px] font-bold">Our approach</div>
           <div className="mt-3 opacity-70 leading-[30px]">
             The undertaking comprises multiple subdivisions that are
             interconnected and supported by a sturdy steel framework. Although

@@ -5,7 +5,7 @@ const AboutUs = () => {
   return (
     <div
       id={pathnameObj.aboutUs}
-      className="container grid lg:grid-cols-2 mx-auto py-20 lg:py-[120px] px-5 gap-10 xl:gap-20 items-center"
+      className="container grid lg:grid-cols-2 mx-auto py-20 xl:py-20 2xl:py-[120px] px-5 gap-10 xl:gap-20 items-center"
     >
       <div className="about-left-image relative">
         <Image
@@ -28,13 +28,13 @@ const AboutUs = () => {
         </div>
       </div>
       <div>
-        <div className="text-[18px] xl:text-[22px] font-semibold text-[#233FD6]">
+        <div className="text-[18px] 2xl:text-[22px] font-semibold text-[#233FD6]">
           About Us
         </div>
-        <div className="mt-2 text-[35px] xl:text-[50px] font-bold">
+        <div className="mt-2 text-[35px] xl:text-[40px] 2xl:text-[50px] font-bold">
           Our Dedicated Solutions to Your Success
         </div>
-        <p className="mt-3 text-[16px] xl:text-[18px]">
+        <p className="mt-3 text-[16px] 2xl:text-[18px]">
           Archibuild is your one-stop global destination for steel detailing
           services, including BIM, PEB, precast panel. Our
           diverse expertise and skilled team ensure precise design execution
@@ -47,10 +47,10 @@ const AboutUs = () => {
         <div className="grid grid-cols-2 mt-20">
           <div />
           <div>
-            <div className="text-[25px] xl:text-[30px] font-semibold">
+            <div className="text-[25px] 2xl:text-[30px] font-semibold">
               Jodie Phan
             </div>
-            <div className="text-[14px] xl:text-[18px]">
+            <div className="text-[14px] 2xl:text-[18px]">
               CEO & co-founder of Archibuild
             </div>
           </div>

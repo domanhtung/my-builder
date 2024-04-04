@@ -11,19 +11,19 @@ const FooterComponent = () => {
   return (
     <>
       <div className="wpo-site-footer">
-        <div className="container relative grid dm:grid-cols-2 lg:grid-cols-4 gap-10 mx-auto py-20 px-5 z-[2]">
+        <div className="container relative grid dm:grid-cols-2 lg:grid-cols-4 gap-10 mx-auto py-10 2xl:py-20 px-5 z-[2]">
           <div>
             <Link href={"https://archibuild.ai"} target="_blank">
               <Image
                 src={"/images/logo.png"}
-                className="w-[120px] h-[29px] xl:w-[166px] xl:h-[40px]"
+                className="w-[120px] h-[29px] xl:w-[134px] xl:h-[35px] 2xl:w-[166px] 2xl:h-[40px]"
                 width={166}
                 height={40}
                 priority
                 alt="logo"
               />
             </Link>
-            <p className="mt-5 !text-white xl:leading-[30px] text-[14px] xl:text-[16px]">
+            <p className="mt-5 !text-white xl:leading-[24px] 2xl:leading-[30px] text-[14px] 2xl:text-[16px]">
               Archibuild provides global steel detailing services, including
               BIM, PEB, precast panel. Our expert team
               delivers precise 2D drawings and 3D models for efficient
@@ -51,14 +51,14 @@ const FooterComponent = () => {
             </div>
           </div>
           <div>
-            <div className="pb-2 text-[25px] xl:text-[30px] font-semibold !text-white">
+            <div className="pb-2 text-[25px] 2xl:text-[30px] font-semibold !text-white">
               Our Services
             </div>
             <div className="w-[80px] max-w-full h-[2px] mb-8 !bg-[#ED4D5D]" />
             {footerOurServices?.map((service, index) => {
               return (
                 <Link key={index} href={service?.url}>
-                  <div className="!text-white mt-3 text-[16px] xl:text-[18px] hover:!text-[#ED4D5D] cursor-pointer">
+                  <div className="!text-white mt-3 text-[16px] 2xl:text-[18px] hover:!text-[#ED4D5D] cursor-pointer">
                     {service?.name}
                   </div>
                 </Link>
@@ -66,14 +66,14 @@ const FooterComponent = () => {
             })}
           </div>
           <div>
-            <div className="pb-2 text-[25px] xl:text-[30px] font-semibold !text-white">
+            <div className="pb-2 text-[25px] 2xl:text-[30px] font-semibold !text-white">
               Navigalion
             </div>
             <div className="w-[80px] max-w-full h-[2px] mb-8 !bg-[#ED4D5D]" />
             {navname?.map((service, index) => {
               return (
                 <Link key={index} href={service.url}>
-                  <div className="!text-white mt-3 text-[16px] xl:text-[18px] hover:!text-[#ED4D5D] cursor-pointer">
+                  <div className="!text-white mt-3 text-[16px] 2xl:text-[18px] hover:!text-[#ED4D5D] cursor-pointer">
                     {service?.name}
                   </div>
                 </Link>
@@ -81,7 +81,7 @@ const FooterComponent = () => {
             })}
           </div>
           <div>
-            <div className="pb-2 text-[25px] xl:text-[30px] font-semibold !text-white">
+            <div className="pb-2 text-[25px] 2xl:text-[30px] font-semibold !text-white">
               Newsletter
             </div>
             <div className="w-[80px] max-w-full h-[2px] mb-8 !bg-[#ED4D5D]" />

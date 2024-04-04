@@ -4,10 +4,10 @@ import Image from "next/image";
 const Partners = () => {
   return (
     <div className="container mx-auto px-5 pt-10 lg:pt-20">
-      <div className="text-[18px] xl:text-[22px] font-semibold text-[#233FD6]">
+      <div className="text-[18px] 2xl:text-[22px] font-semibold text-[#233FD6]">
         Meet our partners
       </div>
-      <div className="text-[35px] xl:text-[50px] font-bold">
+      <div className="text-[35px] xl:text-[40px] 2xl:text-[50px] font-bold">
         {"Our Clients"}
       </div>
       <div className="mt-10 overflow-hidden">

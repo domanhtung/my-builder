@@ -47,7 +47,7 @@ const HomeContact = () => {
   return (
     <div id="contact" className="container mx-auto py-20 px-5">
       <div className="p-5 lg:p-7 shadow-light rounded-[20px]">
-        <div className="text-[30px] font-semibold">
+        <div className="text-[25px] 2xl:text-[30px] font-semibold">
           {"Have project in mind? Let's discuss"}
         </div>
         <div className="opacity-70">

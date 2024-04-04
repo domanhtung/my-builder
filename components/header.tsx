@@ -102,7 +102,7 @@ const HeaderComponent = () => {
           <Link href={"https://archibuild.ai"} target="_blank" className="py-3">
             <Image
               src={"/images/logo.png"}
-              className="w-[120px] h-[29px] xl:w-[166px] xl:h-[40px]"
+              className="w-[120px] h-[29px] 2xl:w-[166px] 2xl:h-[40px]"
               width={166}
               height={40}
               priority
@@ -114,8 +114,8 @@ const HeaderComponent = () => {
               return (
                 <>
                   {nav?.list ? (
-                    <div className="link-header relative group flex h-full px-1 xl:px-3 items-center text-white no-underline">
-                      <span className="px-3 text-[16px] xl:text-[18px] font-semibold cursor-pointer">
+                    <div className="link-header relative group flex h-full px-1 2xl:px-3 items-center text-white no-underline">
+                      <span className="px-1 2xl:px-3 text-[16px] 2xl:text-[18px] font-semibold cursor-pointer">
                         {nav?.name}
                       </span>
                       <div
@@ -139,7 +139,7 @@ const HeaderComponent = () => {
                     </div>
                   ) : (
                     <div
-                      className="link-header relative flex h-full px-1 xl:px-3 items-center text-white no-underline"
+                      className="link-header relative flex h-full px-1 2xl:px-3 items-center text-white no-underline"
                       key={nav?.key}
                       onClick={() => {
                         nav.key !== pathnameObj.contact &&
@@ -151,7 +151,7 @@ const HeaderComponent = () => {
                       nav.key === pathnameObj.visualization ? (
                         <Link
                           href={`${nav?.url}`}
-                          className="px-3 text-[16px] xl:text-[18px] font-semibold"
+                          className="px-3 text-[16px] 2xl:text-[18px] font-semibold"
                           target={
                             nav.key === pathnameObj.visualization
                               ? "_blank"
@@ -161,7 +161,7 @@ const HeaderComponent = () => {
                           {nav?.name}
                         </Link>
                       ) : (
-                        <span className="px-3 text-[16px] xl:text-[18px] font-semibold cursor-pointer">
+                        <span className="px-3 text-[16px] 2xl:text-[18px] font-semibold cursor-pointer">
                           {nav?.name}
                         </span>
                       )}

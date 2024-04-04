@@ -60,14 +60,14 @@ const BannerContentItem = ({ value, index }: ItemProps) => {
     <div
       key={value?.title}
       className={clsx(
-        "grid md:block relative pb-3 md:pb-0 pl-5 xl:pl-20 justify-center md:justify-start text-center md:text-left",
+        "grid md:block relative pb-3 md:pb-0 pl-5 xl:pl-10 2xl:pl-20 justify-center md:justify-start text-center md:text-left",
         index < bannerContents?.length - 1 &&
           "wpo-feature-section border-b !border-black border-opacity-20 md:border-none"
       )}
     >
       <Image
         src={value?.img}
-        className="w-[50px] h-[50px] xl:w-[60px] xl:h-[60px] mx-auto md:mx-0"
+        className="w-[50px] h-[50px] 2xl:w-[60px] 2xl:h-[60px] mx-auto md:mx-0"
         width={60}
         height={60}
         priority
@@ -75,12 +75,12 @@ const BannerContentItem = ({ value, index }: ItemProps) => {
       />
       <div
         ref={ref}
-        className="mt-3 text-[34px] xl:text-[40px] font-bold text-[#000B47]"
+        className="mt-3 text-[34px] 2xl:text-[40px] font-bold text-[#000B47]"
       >{`${value?.numb}+`}</div>
-      <div className="text-[20px] xl:text-[25px] font-semibold text-[#625F71]">
+      <div className="text-[20px] 2xl:text-[25px] font-semibold text-[#625F71]">
         {value?.title}
       </div>
-      <div className="text-[14px] xl:text-[18px] text-[#625F71]">
+      <div className="text-[14px] 2xl:text-[18px] text-[#625F71]">
         {value?.content}
       </div>
       <div ref={currentRef} />
@@ -93,13 +93,13 @@ const Banner = () => {
     <>
       <div className="static-hero min-h-[800px] lg:min-h-screen">
         <div className="container mx-auto px-5 lg:pl-[120px]">
-          <p className="text-[18px] xl:text-[20px] !text-[#ED4D5D] font-semibold">
+          <p className="text-[18px] 2xl:text-[20px] !text-[#ED4D5D] font-semibold">
             Welcome to Archibuild
           </p>
-          <h1 className="!text-white text-[30px] md:text-[40px] lg:text-[58px] xl:text-[70px] font-bold">
+          <h1 className="!text-white text-[30px] md:text-[40px] lg:text-[58px] 2xl:text-[70px] font-bold">
             Quality Steel Detailing Services, Competitive Pricing
           </h1>
-          <p className="max-w-[780px] text-[18px] xl:text-[20px] !text-white">
+          <p className="max-w-[780px] text-[18px] 2xl:text-[20px] !text-white">
             At Archibuild, you will find the best team of steel detailers,
             drafters, and designers who are experienced in steel fabrication and
             shop drawing services delivery.

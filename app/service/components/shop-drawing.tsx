@@ -13,7 +13,7 @@ const ShopDrawing = () => {
         priority
         alt="img"
       />
-      <h2 className="mt-10 text-[26px] lg:text-[35px] font-bold">SHOP DRAWING SERVICES</h2>
+      <h2 className="mt-10 text-[26px] lg:text-[30px] 2xl:text-[35px] font-bold">SHOP DRAWING SERVICES</h2>
       <p className="mt-1 font-bold">What are Shop Drawings?</p>
       <p>
         Shop drawings are collections of sketches created by various
@@ -37,7 +37,7 @@ const ShopDrawing = () => {
       {shopDrawingContentList?.map((content, index) => {
         return (
           <div key={index}>
-            <h2 className="mt-10 text-[26px] lg:text-[25px] font-bold">{content.title}</h2>
+            <h2 className="mt-10 text-[22px] 2xl:text-[25px] font-bold">{content.title}</h2>
             <div className="grid md:grid-cols-2 gap-5 mt-3 items-center">
               <p className={clsx(index % 2 === 0 && "md:order-last")}>
                 {content.content}
@@ -54,7 +54,7 @@ const ShopDrawing = () => {
           </div>
         );
       })}
-      <h2 className="mt-10 text-[26px] lg:text-[25px] font-bold">
+      <h2 className="mt-10 text-[22px] 2xl:text-[25px] font-bold">
         FACADE SHOP DRAWINGS SERVICES
       </h2>
       <Image
@@ -65,7 +65,7 @@ const ShopDrawing = () => {
         priority
         alt="img"
       />
-      <p>
+      <p className="mt-5">
         Facade Shop Drawing Services form the bedrock of the construction
         industry, crucial for guiding managers and architects in structural
         design. Enhancing productivity and profitability, these drawings offer a

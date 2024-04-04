@@ -9,13 +9,13 @@ const HomeService = () => {
   return (
     <div
       id={pathnameObj.service}
-      className="relative pt-5 lg:pt-10 pb-10 lg:pb-[120px] overflow-hidden"
+      className="relative pt-5 lg:pt-10 pb-10 xl:pb-20 2xl:pb-[120px] overflow-hidden"
     >
       <div className="container relative mx-auto">
-        <div className="px-5 text-[18px] xl:text-[22px] font-semibold text-[#233FD6]">
+        <div className="px-5 text-[18px] 2xl:text-[22px] font-semibold text-[#233FD6]">
           What We Offer
         </div>
-        <div className="px-5 text-[35px] xl:text-[50px] font-bold">
+        <div className="px-5 text-[35px] xl:text-[40px] 2xl:text-[50px] font-bold">
           Our Services
         </div>
         <div className="slider-service mt-5 px-5 md:pl-5 md:pr-0">
@@ -54,7 +54,7 @@ const HomeService = () => {
                     <div className="line-one"></div>
                     <div className="line-two"></div>
                   </div>
-                  <div className="content h-[250px] px-7 py-10">
+                  <div className="content h-[230px] 2xl:h-[250px] px-5 2xl:px-7 py-10">
                     <div className="icon">
                       <Image
                         src={content?.icon}
@@ -64,7 +64,7 @@ const HomeService = () => {
                         alt="icon"
                       />
                     </div>
-                    <div className="mt-2 text-[25px] font-bold group-hover:!text-[#ED4D5D] cursor-pointer">
+                    <div className="mt-2 text-[23px] 2xl:text-[25px] font-bold group-hover:!text-[#ED4D5D] cursor-pointer">
                       {content?.title}
                     </div>
                     <div className="mt-2 opacity-80">{content?.content}</div>

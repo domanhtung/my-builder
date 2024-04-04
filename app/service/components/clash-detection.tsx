@@ -2,10 +2,10 @@ const ClashDetection = () => {
   return (
     <div>
       <p>Clash Detection: Enhancing Construction Efficiency</p>
-      <h2 className="mt-10 text-[26px] lg:text-[25px] font-bold uppercase">
+      <h2 className="mt-10 text-[20px] 2xl:text-[25px] font-bold uppercase">
         What is Clash Detection?
       </h2>
-      <p>
+      <p className="mt-2">
         Clash Detection is a crucial process in construction and engineering
         that involves finding and solving conflicts between various design
         elements. These clashes can involve conflicts between structural
@@ -15,10 +15,10 @@ const ClashDetection = () => {
         for conflicts at an early stage, avoiding expensive rework and delays in
         construction.
       </p>
-      <h2 className="mt-10 text-[26px] lg:text-[25px] font-bold uppercase">
+      <h2 className="mt-10 text-[20px] 2xl:text-[25px] font-bold uppercase">
         Advantages of Clash Detection:
       </h2>
-      <p>
+      <p className="mt-2">
         <span className="italic">Cost and Time Savings:</span> One of the most
         significant advantages of Clash Detection is its ability to save both
         time and money. By identifying issues early in the design phase,
@@ -48,7 +48,7 @@ const ClashDetection = () => {
         integrity. This focus on precision ultimately results in a safer, more
         durable, and better-performing structure.
       </p>
-      <h2 className="mt-10 text-[26px] lg:text-[25px] font-bold uppercase">
+      <h2 className="mt-10 text-[20px] 2xl:text-[25px] font-bold uppercase">
         Advantages of Clash Detection:
       </h2>
       <p className="py-3 italic">Case Study 1: High-Rise Office Building</p>
@@ -73,10 +73,10 @@ const ClashDetection = () => {
         approach not only saved time and money but also ensured the safety and
         well-being of patients and staff.
       </p>
-      <h2 className="mt-10 text-[26px] lg:text-[25px] font-bold uppercase">
+      <h2 className="mt-10 text-[20px] 2xl:text-[25px] font-bold uppercase">
         Conclusion:
       </h2>
-      <p>
+      <p className="mt-2">
         In conclusion, Clash Detection, which helps identify and resolve clashes
         or conflicts in construction plans, is a powerful tool that offers
         numerous advantages for construction projects of all sizes and
@@ -88,10 +88,10 @@ const ClashDetection = () => {
         that meet the needs of clients and stakeholders. Additionally, clash
         detection helps to prevent costly rework and delays during construction.
       </p>
-      <h2 className="mt-10 text-[26px] lg:text-[25px] font-bold uppercase">
+      <h2 className="mt-10 text-[20px] 2xl:text-[25px] font-bold uppercase">
         Our Promise of Excellence
       </h2>
-      <p>
+      <p className="mt-2">
         At Archibuild, we are committed to excellence in every aspect of our
         Clash Detection services. With a team of seasoned professionals and a
         passion for pushing the boundaries of innovation, we strive to deliver
@@ -100,10 +100,10 @@ const ClashDetection = () => {
         side, meticulously detecting and resolving every clash with precision
         and care.
       </p>
-      <h2 className="mt-10 text-[26px] lg:text-[25px] font-bold uppercase">
+      <h2 className="mt-10 text-[20px] 2xl:text-[25px] font-bold uppercase">
         Join the Clash Detection Revolution
       </h2>
-      <p>
+      <p className="mt-2">
         Are you ready to embark on a construction journey fueled by efficiency,
         precision, and innovation? Let our Clash Detection service be your
         guiding light. Whether you&apos;re embarking on a small-scale renovation or a
