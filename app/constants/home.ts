@@ -43,6 +43,11 @@ export const navname = [
         url: `/${pathnameObj.project}/${projectKey.delnorth}`,
         name: projectNameByKey?.[projectKey?.delnorth],
       },
+      {
+        key: projectKey.platformBoardwalk,
+        url: `/${pathnameObj.project}/${projectKey.platformBoardwalk}`,
+        name: projectNameByKey?.[projectKey?.platformBoardwalk],
+      },
     ],
   },
   {
@@ -120,22 +125,22 @@ export const serviceContent = [
 export const testimonials = [
   {
     img: "/images/testimonial_1.jpg",
-    name: "Hanial nilton jhon",
-    job: "Managin dirctor",
+    name: "Adam Robinson",
+    job: "Project Manager",
     comment:
       "Archibuild's steel detailing service surpassed our expectations. Their precision and professionalism kept our project on track and within budget. Highly recommend their expertise!",
   },
   {
     img: "/images/testimonial_2.jpg",
-    name: "Cathi Falcon Ami",
-    job: "CEO Barta",
+    name: "Keleigh Spinner",
+    job: "Founder & CEO",
     comment:
       "Thanks to Jodie and team, our project was completed on time and within budget. Highly recommend their reliable steel detailing services.",
   },
   {
     img: "/images/testimonial_3.jpg",
-    name: "Jenelia Orkid pasa",
-    job: "Fashion Designer",
+    name: "Alice Phillips",
+    job: "Director",
     comment:
       "Archibuild's attention to detail and responsiveness made our steel detailing process seamless. They're now our go-to for precision work.",
   },

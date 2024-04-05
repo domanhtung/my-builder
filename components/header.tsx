@@ -120,7 +120,7 @@ const HeaderComponent = () => {
                       </span>
                       <div
                         className={clsx(
-                          "absolute grid w-[200px] py-5 px-3 top-[86px] left-0 opacity-0 group-hover:opacity-100 gap-5 !bg-white shadow-lg",
+                          "absolute grid w-[310px] py-5 px-3 top-[86px] left-0 opacity-0 group-hover:opacity-100 gap-5 !bg-white shadow-lg",
                           "duration-300 group-hover:pointer-events-auto pointer-events-none translate-y-5 group-hover:translate-y-0"
                         )}
                       >
