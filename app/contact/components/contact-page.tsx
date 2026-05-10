@@ -80,7 +80,7 @@ const ContactPage = () => {
             />
           </div>
           <div className="py-3 text-[24px] 2xl:text-[30px]">Email Us</div>
-          <p className="opacity-70 text-[14px] 2xl:text-[16px]">hello@archibuild.ai</p>
+          <p className="opacity-70 text-[14px] 2xl:text-[16px]">jodiephan@hotmail.com</p>
         </div>
         <div className="px-5 py-8 text-center shadow-light">
           <div className="w-fit p-5 mx-auto rounded-full bg-[#f5f5f5]">
@@ -93,6 +93,7 @@ const ContactPage = () => {
             />
           </div>
           <div className="py-3 text-[24px] 2xl:text-[30px]">Call Now</div>
+          <p className="opacity-70 text-[14px] 2xl:text-[16px]">+85 2222 311</p>
           <p className="opacity-70 text-[14px] 2xl:text-[16px]">+84 337 778 715</p>
         </div>
       </div>
