@@ -93,7 +93,7 @@ const ContactPage = () => {
             />
           </div>
           <div className="py-3 text-[24px] 2xl:text-[30px]">Call Now</div>
-          <p className="opacity-70 text-[14px] 2xl:text-[16px]">+85 2222 311</p>
+          <p className="opacity-70 text-[14px] 2xl:text-[16px]">+84 85 2222 311</p>
           <p className="opacity-70 text-[14px] 2xl:text-[16px]">+84 337 778 715</p>
         </div>
       </div>
